@@ -184,3 +184,85 @@ sdc              0.00      0.00     0.00   0.00    0.00     0.00    7.00    444.
 [Wed Aug  5 21:25:08 2026]  ? audit_reset_context.part.0.constprop.0+0x273/0x2e0
 [Wed Aug  5 21:25:08 2026]  ? audit_reset_context.part.0.constprop.0+0x273/0x2e0
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[root@cmpcprgovd210 ~]# date;hostname; df-hT /data;iostat-xz 1 10;pidstat -d 1 10
+Thu Sep  3 03:37:01 PM IST 2026
+cmpcprgovd210
+bash: df-hT: command not found...
+Failed to search for file: /mnt/BaseOS was not found
+bash: iostat-xz: command not found...
+Failed to search for file: /mnt/BaseOS was not found
+Linux 5.14.0-687.26.1.el9_8.x86_64 (cmpcprgovd210)      09/03/2026      _x86_64_        (16 CPU)
+
+03:37:01 PM   UID       PID   kB_rd/s   kB_wr/s kB_ccwr/s iodelay  Command
+03:37:03 PM     0      9802      0.00    140.74      0.00       0  ds_am
+03:37:03 PM   511     19257      3.70      0.00      0.00       0  java
+03:37:03 PM   979   3781442      0.00    214.81      0.00       0  oneagentextensi
+
+03:37:03 PM   UID       PID   kB_rd/s   kB_wr/s kB_ccwr/s iodelay  Command
+
+03:37:04 PM   UID       PID   kB_rd/s   kB_wr/s kB_ccwr/s iodelay  Command
+
+03:37:05 PM   UID       PID   kB_rd/s   kB_wr/s kB_ccwr/s iodelay  Command
+03:37:06 PM   511     19257      0.00      4.00      0.00       0  java
+
+03:37:06 PM   UID       PID   kB_rd/s   kB_wr/s kB_ccwr/s iodelay  Command
+03:37:07 PM     0      2352      0.00    124.00      0.00       0  ds_agent
+03:37:07 PM     0      9802      0.00      4.00      0.00       0  ds_am
+
+03:37:07 PM   UID       PID   kB_rd/s   kB_wr/s kB_ccwr/s iodelay  Command
+03:37:08 PM     0      2352      0.00    156.00      0.00       0  ds_agent
+
+03:37:08 PM   UID       PID   kB_rd/s   kB_wr/s kB_ccwr/s iodelay  Command
+03:37:09 PM     0      1938      0.00     64.00      0.00       0  tmxbc
+03:37:09 PM     0    810577      0.00      4.00      0.00       0  vls_am
+
+03:37:09 PM   UID       PID   kB_rd/s   kB_wr/s kB_ccwr/s iodelay  Command
+
+03:37:10 PM   UID       PID   kB_rd/s   kB_wr/s kB_ccwr/s iodelay  Command
+03:37:11 PM     0      9802      0.00      4.00      0.00       0  ds_am
+03:37:11 PM  1002   1419615      0.00     12.00      0.00       0  splunkd
+
+03:37:11 PM   UID       PID   kB_rd/s   kB_wr/s kB_ccwr/s iodelay  Command
+03:37:12 PM     0      2352      0.00     64.00      0.00       0  ds_agent
+03:37:12 PM     0      9802      0.00    152.00      0.00       0  ds_am
+03:37:12 PM   979   3781442      0.00    232.00      0.00       0  oneagentextensi
+
+Average:      UID       PID   kB_rd/s   kB_wr/s kB_ccwr/s iodelay  Command
+Average:        0      1938      0.00      6.34      0.00       0  tmxbc
+Average:        0      2352      0.00     34.09      0.00       0  ds_agent
+Average:        0      9802      0.00     30.92      0.00       0  ds_am
+Average:      511     19257      0.40      0.40      0.00       0  java
+Average:        0    810577      0.00      0.40      0.00       0  vls_am
+Average:     1002   1419615      0.00      1.19      0.00       0  splunkd
+Average:      979   3781442      0.00     45.99      0.00       0  oneagentextensi
+[root@cmpcprgovd210 ~]#  df -hT /data
+Filesystem                            Type  Size  Used Avail Use% Mounted on
+10.191.22.190:/FastPlus_Cloud_DC/data nfs4   15T  6.8T  8.3T  46% /data
+
+
