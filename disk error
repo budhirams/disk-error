@@ -129,3 +129,58 @@ dm-4             0.00      0.00     0.00   0.00    0.00     0.00   10.00    462.
 dm-6            94.00    376.00     0.00   0.00    0.19     4.00    0.00      0.00     0.00   0.00    0.00     0.00    0.00      0.00     0.00   0.00    0.00     0.00    0.00    0.00    0.02   1.80
 sda             94.00    376.00     0.00   0.00    0.17     4.00    2.00     18.00     0.00   0.00    0.50     9.00    0.00      0.00     0.00   0.00    0.00     0.00    0.00    0.00    0.02   2.00
 sdc              0.00      0.00     0.00   0.00    0.00     0.00    7.00    444.00     1.00  12.50    0.43    63.43    0.00      0.00     0.00   0.00    0.00     0.00    0.00    0.00    0.00   0.30
+
+
+
+
+
+
+
+
+[root@cmpcprgovd210 ~]# dmesg -T | egrep -i "error|fail|timeout|reset|I/O"
+[Tue Aug  4 22:13:26 2026] APIC: Switch to symmetric I/O mode setup
+[Tue Aug  4 22:13:26 2026] Calibrating delay loop (skipped) preset value.. 4190.15 BogoMIPS (lpj=2095078)
+[Tue Aug  4 22:13:26 2026] pci 0000:00:16.4: bridge window [io  size 0x1000]: failed to assign
+[Tue Aug  4 22:13:26 2026] pci 0000:00:16.5: bridge window [io  size 0x1000]: failed to assign
+[Tue Aug  4 22:13:26 2026] pci 0000:00:16.6: bridge window [io  size 0x1000]: failed to assign
+[Tue Aug  4 22:13:26 2026] pci 0000:00:16.7: bridge window [io  size 0x1000]: failed to assign
+[Tue Aug  4 22:13:26 2026] pci 0000:00:17.0: bridge window [io  size 0x1000]: failed to assign
+[Tue Aug  4 22:13:26 2026] pci 0000:00:17.1: bridge window [io  size 0x1000]: failed to assign
+[Tue Aug  4 22:13:26 2026] pci 0000:00:17.2: bridge window [io  size 0x1000]: failed to assign
+[Tue Aug  4 22:13:26 2026] pci 0000:00:17.3: bridge window [io  size 0x1000]: failed to assign
+[Tue Aug  4 22:13:26 2026] pci 0000:00:17.4: bridge window [io  size 0x1000]: failed to assign
+[Tue Aug  4 22:13:26 2026] pci 0000:00:17.5: bridge window [io  size 0x1000]: failed to assign
+[Tue Aug  4 22:13:26 2026] pci 0000:00:17.6: bridge window [io  size 0x1000]: failed to assign
+[Tue Aug  4 22:13:26 2026] pci 0000:00:17.7: bridge window [io  size 0x1000]: failed to assign
+[Tue Aug  4 22:13:26 2026] pci 0000:00:18.0: bridge window [io  size 0x1000]: failed to assign
+[Tue Aug  4 22:13:26 2026] pci 0000:00:18.1: bridge window [io  size 0x1000]: failed to assign
+[Tue Aug  4 22:13:26 2026] pci 0000:00:18.2: bridge window [io  size 0x1000]: failed to assign
+[Tue Aug  4 22:13:26 2026] pci 0000:00:18.3: bridge window [io  size 0x1000]: failed to assign
+[Tue Aug  4 22:13:26 2026] pci 0000:00:18.4: bridge window [io  size 0x1000]: failed to assign
+[Tue Aug  4 22:13:26 2026] pci 0000:00:18.5: bridge window [io  size 0x1000]: failed to assign
+[Tue Aug  4 22:13:26 2026] pci 0000:00:18.6: bridge window [io  size 0x1000]: failed to assign
+[Tue Aug  4 22:13:26 2026] pci 0000:00:18.7: bridge window [io  size 0x1000]: failed to assign
+[Tue Aug  4 22:13:26 2026] pci 0000:00:17.5: bridge window [io  size 0x1000]: failed to assign
+[Tue Aug  4 22:13:26 2026] pci 0000:00:17.4: bridge window [io  size 0x1000]: failed to assign
+[Tue Aug  4 22:13:26 2026] pci 0000:00:17.3: bridge window [io  size 0x1000]: failed to assign
+[Tue Aug  4 22:13:26 2026] pci 0000:00:17.2: bridge window [io  size 0x1000]: failed to assign
+[Tue Aug  4 22:13:26 2026] pci 0000:00:17.1: bridge window [io  size 0x1000]: failed to assign
+[Tue Aug  4 22:13:26 2026] pci 0000:00:17.0: bridge window [io  size 0x1000]: failed to assign
+[Tue Aug  4 22:13:26 2026] pci 0000:00:16.7: bridge window [io  size 0x1000]: failed to assign
+[Tue Aug  4 22:13:26 2026] pci 0000:00:16.6: bridge window [io  size 0x1000]: failed to assign
+[Tue Aug  4 22:13:26 2026] pci 0000:00:16.5: bridge window [io  size 0x1000]: failed to assign
+[Tue Aug  4 22:13:26 2026] pci 0000:00:16.4: bridge window [io  size 0x1000]: failed to assign
+[Tue Aug  4 22:13:26 2026] pci 0000:00:16.3: bridge window [io  size 0x1000]: failed to assign
+[Tue Aug  4 22:13:26 2026] pci 0000:00:16.2: bridge window [io  size 0x1000]: failed to assign
+[Tue Aug  4 22:13:26 2026] pci 0000:00:16.1: bridge window [io  size 0x1000]: failed to assign
+[Tue Aug  4 22:13:26 2026] pci 0000:00:15.7: bridge window [io  size 0x1000]: failed to assign
+[Tue Aug  4 22:13:26 2026] pci 0000:00:15.6: bridge window [io  size 0x1000]: failed to assign
+[Tue Aug  4 22:13:26 2026] pci 0000:00:15.5: bridge window [io  size 0x1000]: failed to assign
+[Tue Aug  4 22:13:26 2026] pci 0000:00:15.4: bridge window [io  size 0x1000]: failed to assign
+[Tue Aug  4 22:13:26 2026] pci 0000:00:15.3: bridge window [io  size 0x1000]: failed to assign
+[Tue Aug  4 22:13:26 2026] pci 0000:00:15.2: bridge window [io  size 0x1000]: failed to assign
+[Tue Aug  4 22:13:26 2026] pci 0000:00:15.1: bridge window [io  size 0x1000]: failed to assign
+[Wed Aug  5 21:25:08 2026]  ? audit_reset_context.part.0.constprop.0+0x273/0x2e0
+[Wed Aug  5 21:25:08 2026]  ? audit_reset_context.part.0.constprop.0+0x273/0x2e0
+[Wed Aug  5 21:25:08 2026]  ? audit_reset_context.part.0.constprop.0+0x273/0x2e0
+
