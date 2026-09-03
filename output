@@ -1,0 +1,1497 @@
+[root@cmpcprgovd210 ~]# nfsstat -m
+/data from 10.191.22.190:/FastPlus_Cloud_DC/data
+ Flags: rw,relatime,vers=4.2,rsize=65536,wsize=65536,namlen=255,hard,proto=tcp,timeo=600,retrans=2,sec=sys,clientaddr=10.191.144.210,local_lock=none,addr=10.191.22.190
+
+/doc-root from 10.191.22.190:/FastPlus_Cloud_DC/doc-root
+ Flags: rw,relatime,vers=4.2,rsize=65536,wsize=65536,namlen=255,hard,proto=tcp,timeo=600,retrans=2,sec=sys,clientaddr=10.191.144.210,local_lock=none,addr=10.191.22.190
+
+/systemlogs from 10.191.22.190:/FastPlus_Cloud_DC/systemlogs
+ Flags: rw,relatime,vers=4.2,rsize=65536,wsize=65536,namlen=255,hard,proto=tcp,timeo=600,retrans=2,sec=sys,clientaddr=10.191.144.210,local_lock=none,addr=10.191.22.190
+
+/batchlogs from 10.191.22.190:/FastPlus_Cloud_DC/batchlogs
+ Flags: rw,relatime,vers=4.2,rsize=65536,wsize=65536,namlen=255,hard,proto=tcp,timeo=600,retrans=2,sec=sys,clientaddr=10.191.144.210,local_lock=none,addr=10.191.22.190
+
+/batchlogs_backup from 10.191.22.190:/FastPlus_Cloud_DC/batchlogs_backup
+ Flags: rw,relatime,vers=4.2,rsize=65536,wsize=65536,namlen=255,hard,proto=tcp,timeo=600,retrans=2,sec=sys,clientaddr=10.191.144.210,local_lock=none,addr=10.191.22.190
+
+/shared_lib from 10.191.22.190:/FastPlus_Cloud_DC/shared_lib
+ Flags: rw,relatime,vers=4.2,rsize=65536,wsize=65536,namlen=255,hard,proto=tcp,timeo=600,retrans=2,sec=sys,clientaddr=10.191.144.210,local_lock=none,addr=10.191.22.190
+
+/logs_archive from 10.191.22.190:/FastPlus_Cloud_DC/logs_archive
+ Flags: rw,relatime,vers=4.2,rsize=65536,wsize=65536,namlen=255,hard,proto=tcp,timeo=600,retrans=2,sec=sys,clientaddr=10.191.144.210,local_lock=none,addr=10.191.22.190
+
+[root@cmpcprgovd210 ~]# nfsiostat 1 10
+
+10.191.22.190:/FastPlus_Cloud_DC/data mounted on /data:
+
+           ops/s       rpc bklog
+        1537.743           0.000
+
+read:              ops/s            kB/s           kB/op         retrans    avg RTT (ms)    avg exe (ms)  avg queue (ms)          errors
+                 630.325       35680.101          56.606        0 (0.0%)           4.228           4.370           0.106        8 (0.0%)
+write:             ops/s            kB/s           kB/op         retrans    avg RTT (ms)    avg exe (ms)  avg queue (ms)          errors
+                   0.050           3.228          64.372        0 (0.0%)          10.526         351.977         341.435        0 (0.0%)
+
+10.191.22.190:/FastPlus_Cloud_DC/doc-root mounted on /doc-root:
+
+           ops/s       rpc bklog
+        1537.743           0.000
+
+read:              ops/s            kB/s           kB/op         retrans    avg RTT (ms)    avg exe (ms)  avg queue (ms)          errors
+                 630.325       35680.101          56.606        0 (0.0%)           4.228           4.370           0.106        8 (0.0%)
+write:             ops/s            kB/s           kB/op         retrans    avg RTT (ms)    avg exe (ms)  avg queue (ms)          errors
+                   0.050           3.228          64.372        0 (0.0%)          10.526         351.977         341.435        0 (0.0%)
+
+10.191.22.190:/FastPlus_Cloud_DC/systemlogs mounted on /systemlogs:
+
+           ops/s       rpc bklog
+        1537.743           0.000
+
+read:              ops/s            kB/s           kB/op         retrans    avg RTT (ms)    avg exe (ms)  avg queue (ms)          errors
+                 630.325       35680.101          56.606        0 (0.0%)           4.228           4.370           0.106        8 (0.0%)
+write:             ops/s            kB/s           kB/op         retrans    avg RTT (ms)    avg exe (ms)  avg queue (ms)          errors
+                   0.050           3.228          64.372        0 (0.0%)          10.526         351.977         341.435        0 (0.0%)
+
+10.191.22.190:/FastPlus_Cloud_DC/batchlogs mounted on /batchlogs:
+
+           ops/s       rpc bklog
+        1537.743           0.000
+
+read:              ops/s            kB/s           kB/op         retrans    avg RTT (ms)    avg exe (ms)  avg queue (ms)          errors
+                 630.325       35680.101          56.606        0 (0.0%)           4.228           4.370           0.106        8 (0.0%)
+write:             ops/s            kB/s           kB/op         retrans    avg RTT (ms)    avg exe (ms)  avg queue (ms)          errors
+                   0.050           3.228          64.372        0 (0.0%)          10.526         351.977         341.435        0 (0.0%)
+
+10.191.22.190:/FastPlus_Cloud_DC/batchlogs_backup mounted on /batchlogs_backup:
+
+           ops/s       rpc bklog
+        1537.743           0.000
+
+read:              ops/s            kB/s           kB/op         retrans    avg RTT (ms)    avg exe (ms)  avg queue (ms)          errors
+                 630.325       35680.101          56.606        0 (0.0%)           4.228           4.370           0.106        8 (0.0%)
+write:             ops/s            kB/s           kB/op         retrans    avg RTT (ms)    avg exe (ms)  avg queue (ms)          errors
+                   0.050           3.228          64.372        0 (0.0%)          10.526         351.977         341.435        0 (0.0%)
+
+10.191.22.190:/FastPlus_Cloud_DC/shared_lib mounted on /shared_lib:
+
+           ops/s       rpc bklog
+        1537.743           0.000
+
+read:              ops/s            kB/s           kB/op         retrans    avg RTT (ms)    avg exe (ms)  avg queue (ms)          errors
+                 630.325       35680.101          56.606        0 (0.0%)           4.228           4.370           0.106        8 (0.0%)
+write:             ops/s            kB/s           kB/op         retrans    avg RTT (ms)    avg exe (ms)  avg queue (ms)          errors
+                   0.050           3.228          64.372        0 (0.0%)          10.526         351.977         341.435        0 (0.0%)
+
+10.191.22.190:/FastPlus_Cloud_DC/logs_archive mounted on /logs_archive:
+
+           ops/s       rpc bklog
+        1537.743           0.000
+
+read:              ops/s            kB/s           kB/op         retrans    avg RTT (ms)    avg exe (ms)  avg queue (ms)          errors
+                 630.325       35680.101          56.606        0 (0.0%)           4.228           4.370           0.106        8 (0.0%)
+write:             ops/s            kB/s           kB/op         retrans    avg RTT (ms)    avg exe (ms)  avg queue (ms)          errors
+                   0.050           3.228          64.372        0 (0.0%)          10.526         351.977         341.435        0 (0.0%)
+
+10.191.22.190:/FastPlus_Cloud_DC/data mounted on /data:
+
+           ops/s       rpc bklog
+           0.000           0.000
+
+read:              ops/s            kB/s           kB/op         retrans    avg RTT (ms)    avg exe (ms)  avg queue (ms)          errors
+                   0.000           0.000           0.000        0 (0.0%)           0.000           0.000           0.000        0 (0.0%)
+write:             ops/s            kB/s           kB/op         retrans    avg RTT (ms)    avg exe (ms)  avg queue (ms)          errors
+                   0.000           0.000           0.000        0 (0.0%)           0.000           0.000           0.000        0 (0.0%)
+
+10.191.22.190:/FastPlus_Cloud_DC/doc-root mounted on /doc-root:
+
+           ops/s       rpc bklog
+           0.000           0.000
+
+read:              ops/s            kB/s           kB/op         retrans    avg RTT (ms)    avg exe (ms)  avg queue (ms)          errors
+                   0.000           0.000           0.000        0 (0.0%)           0.000           0.000           0.000        0 (0.0%)
+write:             ops/s            kB/s           kB/op         retrans    avg RTT (ms)    avg exe (ms)  avg queue (ms)          errors
+                   0.000           0.000           0.000        0 (0.0%)           0.000           0.000           0.000        0 (0.0%)
+
+10.191.22.190:/FastPlus_Cloud_DC/systemlogs mounted on /systemlogs:
+
+           ops/s       rpc bklog
+           0.000           0.000
+
+read:              ops/s            kB/s           kB/op         retrans    avg RTT (ms)    avg exe (ms)  avg queue (ms)          errors
+                   0.000           0.000           0.000        0 (0.0%)           0.000           0.000           0.000        0 (0.0%)
+write:             ops/s            kB/s           kB/op         retrans    avg RTT (ms)    avg exe (ms)  avg queue (ms)          errors
+                   0.000           0.000           0.000        0 (0.0%)           0.000           0.000           0.000        0 (0.0%)
+
+10.191.22.190:/FastPlus_Cloud_DC/batchlogs mounted on /batchlogs:
+
+           ops/s       rpc bklog
+           0.000           0.000
+
+read:              ops/s            kB/s           kB/op         retrans    avg RTT (ms)    avg exe (ms)  avg queue (ms)          errors
+                   0.000           0.000           0.000        0 (0.0%)           0.000           0.000           0.000        0 (0.0%)
+write:             ops/s            kB/s           kB/op         retrans    avg RTT (ms)    avg exe (ms)  avg queue (ms)          errors
+                   0.000           0.000           0.000        0 (0.0%)           0.000           0.000           0.000        0 (0.0%)
+
+10.191.22.190:/FastPlus_Cloud_DC/batchlogs_backup mounted on /batchlogs_backup:
+
+           ops/s       rpc bklog
+           0.000           0.000
+
+read:              ops/s            kB/s           kB/op         retrans    avg RTT (ms)    avg exe (ms)  avg queue (ms)          errors
+                   0.000           0.000           0.000        0 (0.0%)           0.000           0.000           0.000        0 (0.0%)
+write:             ops/s            kB/s           kB/op         retrans    avg RTT (ms)    avg exe (ms)  avg queue (ms)          errors
+                   0.000           0.000           0.000        0 (0.0%)           0.000           0.000           0.000        0 (0.0%)
+
+10.191.22.190:/FastPlus_Cloud_DC/shared_lib mounted on /shared_lib:
+
+           ops/s       rpc bklog
+           0.000           0.000
+
+read:              ops/s            kB/s           kB/op         retrans    avg RTT (ms)    avg exe (ms)  avg queue (ms)          errors
+                   0.000           0.000           0.000        0 (0.0%)           0.000           0.000           0.000        0 (0.0%)
+write:             ops/s            kB/s           kB/op         retrans    avg RTT (ms)    avg exe (ms)  avg queue (ms)          errors
+                   0.000           0.000           0.000        0 (0.0%)           0.000           0.000           0.000        0 (0.0%)
+
+10.191.22.190:/FastPlus_Cloud_DC/logs_archive mounted on /logs_archive:
+
+           ops/s       rpc bklog
+           0.000           0.000
+
+read:              ops/s            kB/s           kB/op         retrans    avg RTT (ms)    avg exe (ms)  avg queue (ms)          errors
+                   0.000           0.000           0.000        0 (0.0%)           0.000           0.000           0.000        0 (0.0%)
+write:             ops/s            kB/s           kB/op         retrans    avg RTT (ms)    avg exe (ms)  avg queue (ms)          errors
+                   0.000           0.000           0.000        0 (0.0%)           0.000           0.000           0.000        0 (0.0%)
+
+10.191.22.190:/FastPlus_Cloud_DC/data mounted on /data:
+
+           ops/s       rpc bklog
+           0.000           0.000
+
+read:              ops/s            kB/s           kB/op         retrans    avg RTT (ms)    avg exe (ms)  avg queue (ms)          errors
+                   0.000           0.000           0.000        0 (0.0%)           0.000           0.000           0.000        0 (0.0%)
+write:             ops/s            kB/s           kB/op         retrans    avg RTT (ms)    avg exe (ms)  avg queue (ms)          errors
+                   0.000           0.000           0.000        0 (0.0%)           0.000           0.000           0.000        0 (0.0%)
+
+10.191.22.190:/FastPlus_Cloud_DC/doc-root mounted on /doc-root:
+
+           ops/s       rpc bklog
+           0.000           0.000
+
+read:              ops/s            kB/s           kB/op         retrans    avg RTT (ms)    avg exe (ms)  avg queue (ms)          errors
+                   0.000           0.000           0.000        0 (0.0%)           0.000           0.000           0.000        0 (0.0%)
+write:             ops/s            kB/s           kB/op         retrans    avg RTT (ms)    avg exe (ms)  avg queue (ms)          errors
+                   0.000           0.000           0.000        0 (0.0%)           0.000           0.000           0.000        0 (0.0%)
+
+10.191.22.190:/FastPlus_Cloud_DC/systemlogs mounted on /systemlogs:
+
+           ops/s       rpc bklog
+           0.000           0.000
+
+read:              ops/s            kB/s           kB/op         retrans    avg RTT (ms)    avg exe (ms)  avg queue (ms)          errors
+                   0.000           0.000           0.000        0 (0.0%)           0.000           0.000           0.000        0 (0.0%)
+write:             ops/s            kB/s           kB/op         retrans    avg RTT (ms)    avg exe (ms)  avg queue (ms)          errors
+                   0.000           0.000           0.000        0 (0.0%)           0.000           0.000           0.000        0 (0.0%)
+
+10.191.22.190:/FastPlus_Cloud_DC/batchlogs mounted on /batchlogs:
+
+           ops/s       rpc bklog
+           0.000           0.000
+
+read:              ops/s            kB/s           kB/op         retrans    avg RTT (ms)    avg exe (ms)  avg queue (ms)          errors
+                   0.000           0.000           0.000        0 (0.0%)           0.000           0.000           0.000        0 (0.0%)
+write:             ops/s            kB/s           kB/op         retrans    avg RTT (ms)    avg exe (ms)  avg queue (ms)          errors
+                   0.000           0.000           0.000        0 (0.0%)           0.000           0.000           0.000        0 (0.0%)
+
+10.191.22.190:/FastPlus_Cloud_DC/batchlogs_backup mounted on /batchlogs_backup:
+
+           ops/s       rpc bklog
+           0.000           0.000
+
+read:              ops/s            kB/s           kB/op         retrans    avg RTT (ms)    avg exe (ms)  avg queue (ms)          errors
+                   0.000           0.000           0.000        0 (0.0%)           0.000           0.000           0.000        0 (0.0%)
+write:             ops/s            kB/s           kB/op         retrans    avg RTT (ms)    avg exe (ms)  avg queue (ms)          errors
+                   0.000           0.000           0.000        0 (0.0%)           0.000           0.000           0.000        0 (0.0%)
+
+10.191.22.190:/FastPlus_Cloud_DC/shared_lib mounted on /shared_lib:
+
+           ops/s       rpc bklog
+           0.000           0.000
+
+read:              ops/s            kB/s           kB/op         retrans    avg RTT (ms)    avg exe (ms)  avg queue (ms)          errors
+                   0.000           0.000           0.000        0 (0.0%)           0.000           0.000           0.000        0 (0.0%)
+write:             ops/s            kB/s           kB/op         retrans    avg RTT (ms)    avg exe (ms)  avg queue (ms)          errors
+                   0.000           0.000           0.000        0 (0.0%)           0.000           0.000           0.000        0 (0.0%)
+
+10.191.22.190:/FastPlus_Cloud_DC/logs_archive mounted on /logs_archive:
+
+           ops/s       rpc bklog
+           0.000           0.000
+
+read:              ops/s            kB/s           kB/op         retrans    avg RTT (ms)    avg exe (ms)  avg queue (ms)          errors
+                   0.000           0.000           0.000        0 (0.0%)           0.000           0.000           0.000        0 (0.0%)
+write:             ops/s            kB/s           kB/op         retrans    avg RTT (ms)    avg exe (ms)  avg queue (ms)          errors
+                   0.000           0.000           0.000        0 (0.0%)           0.000           0.000           0.000        0 (0.0%)
+
+10.191.22.190:/FastPlus_Cloud_DC/data mounted on /data:
+
+           ops/s       rpc bklog
+           0.000           0.000
+
+read:              ops/s            kB/s           kB/op         retrans    avg RTT (ms)    avg exe (ms)  avg queue (ms)          errors
+                   0.000           0.000           0.000        0 (0.0%)           0.000           0.000           0.000        0 (0.0%)
+write:             ops/s            kB/s           kB/op         retrans    avg RTT (ms)    avg exe (ms)  avg queue (ms)          errors
+                   0.000           0.000           0.000        0 (0.0%)           0.000           0.000           0.000        0 (0.0%)
+
+10.191.22.190:/FastPlus_Cloud_DC/doc-root mounted on /doc-root:
+
+           ops/s       rpc bklog
+           0.000           0.000
+
+read:              ops/s            kB/s           kB/op         retrans    avg RTT (ms)    avg exe (ms)  avg queue (ms)          errors
+                   0.000           0.000           0.000        0 (0.0%)           0.000           0.000           0.000        0 (0.0%)
+write:             ops/s            kB/s           kB/op         retrans    avg RTT (ms)    avg exe (ms)  avg queue (ms)          errors
+                   0.000           0.000           0.000        0 (0.0%)           0.000           0.000           0.000        0 (0.0%)
+
+10.191.22.190:/FastPlus_Cloud_DC/systemlogs mounted on /systemlogs:
+
+           ops/s       rpc bklog
+           0.000           0.000
+
+read:              ops/s            kB/s           kB/op         retrans    avg RTT (ms)    avg exe (ms)  avg queue (ms)          errors
+                   0.000           0.000           0.000        0 (0.0%)           0.000           0.000           0.000        0 (0.0%)
+write:             ops/s            kB/s           kB/op         retrans    avg RTT (ms)    avg exe (ms)  avg queue (ms)          errors
+                   0.000           0.000           0.000        0 (0.0%)           0.000           0.000           0.000        0 (0.0%)
+
+10.191.22.190:/FastPlus_Cloud_DC/batchlogs mounted on /batchlogs:
+
+           ops/s       rpc bklog
+           0.000           0.000
+
+read:              ops/s            kB/s           kB/op         retrans    avg RTT (ms)    avg exe (ms)  avg queue (ms)          errors
+                   0.000           0.000           0.000        0 (0.0%)           0.000           0.000           0.000        0 (0.0%)
+write:             ops/s            kB/s           kB/op         retrans    avg RTT (ms)    avg exe (ms)  avg queue (ms)          errors
+                   0.000           0.000           0.000        0 (0.0%)           0.000           0.000           0.000        0 (0.0%)
+
+10.191.22.190:/FastPlus_Cloud_DC/batchlogs_backup mounted on /batchlogs_backup:
+
+           ops/s       rpc bklog
+           0.000           0.000
+
+read:              ops/s            kB/s           kB/op         retrans    avg RTT (ms)    avg exe (ms)  avg queue (ms)          errors
+                   0.000           0.000           0.000        0 (0.0%)           0.000           0.000           0.000        0 (0.0%)
+write:             ops/s            kB/s           kB/op         retrans    avg RTT (ms)    avg exe (ms)  avg queue (ms)          errors
+                   0.000           0.000           0.000        0 (0.0%)           0.000           0.000           0.000        0 (0.0%)
+
+10.191.22.190:/FastPlus_Cloud_DC/shared_lib mounted on /shared_lib:
+
+           ops/s       rpc bklog
+           0.000           0.000
+
+read:              ops/s            kB/s           kB/op         retrans    avg RTT (ms)    avg exe (ms)  avg queue (ms)          errors
+                   0.000           0.000           0.000        0 (0.0%)           0.000           0.000           0.000        0 (0.0%)
+write:             ops/s            kB/s           kB/op         retrans    avg RTT (ms)    avg exe (ms)  avg queue (ms)          errors
+                   0.000           0.000           0.000        0 (0.0%)           0.000           0.000           0.000        0 (0.0%)
+
+10.191.22.190:/FastPlus_Cloud_DC/logs_archive mounted on /logs_archive:
+
+           ops/s       rpc bklog
+           0.000           0.000
+
+read:              ops/s            kB/s           kB/op         retrans    avg RTT (ms)    avg exe (ms)  avg queue (ms)          errors
+                   0.000           0.000           0.000        0 (0.0%)           0.000           0.000           0.000        0 (0.0%)
+write:             ops/s            kB/s           kB/op         retrans    avg RTT (ms)    avg exe (ms)  avg queue (ms)          errors
+                   0.000           0.000           0.000        0 (0.0%)           0.000           0.000           0.000        0 (0.0%)
+
+10.191.22.190:/FastPlus_Cloud_DC/data mounted on /data:
+
+           ops/s       rpc bklog
+           0.000           0.000
+
+read:              ops/s            kB/s           kB/op         retrans    avg RTT (ms)    avg exe (ms)  avg queue (ms)          errors
+                   0.000           0.000           0.000        0 (0.0%)           0.000           0.000           0.000        0 (0.0%)
+write:             ops/s            kB/s           kB/op         retrans    avg RTT (ms)    avg exe (ms)  avg queue (ms)          errors
+                   0.000           0.000           0.000        0 (0.0%)           0.000           0.000           0.000        0 (0.0%)
+
+10.191.22.190:/FastPlus_Cloud_DC/doc-root mounted on /doc-root:
+
+           ops/s       rpc bklog
+           0.000           0.000
+
+read:              ops/s            kB/s           kB/op         retrans    avg RTT (ms)    avg exe (ms)  avg queue (ms)          errors
+                   0.000           0.000           0.000        0 (0.0%)           0.000           0.000           0.000        0 (0.0%)
+write:             ops/s            kB/s           kB/op         retrans    avg RTT (ms)    avg exe (ms)  avg queue (ms)          errors
+                   0.000           0.000           0.000        0 (0.0%)           0.000           0.000           0.000        0 (0.0%)
+
+10.191.22.190:/FastPlus_Cloud_DC/systemlogs mounted on /systemlogs:
+
+           ops/s       rpc bklog
+           0.000           0.000
+
+read:              ops/s            kB/s           kB/op         retrans    avg RTT (ms)    avg exe (ms)  avg queue (ms)          errors
+                   0.000           0.000           0.000        0 (0.0%)           0.000           0.000           0.000        0 (0.0%)
+write:             ops/s            kB/s           kB/op         retrans    avg RTT (ms)    avg exe (ms)  avg queue (ms)          errors
+                   0.000           0.000           0.000        0 (0.0%)           0.000           0.000           0.000        0 (0.0%)
+
+10.191.22.190:/FastPlus_Cloud_DC/batchlogs mounted on /batchlogs:
+
+           ops/s       rpc bklog
+           0.000           0.000
+
+read:              ops/s            kB/s           kB/op         retrans    avg RTT (ms)    avg exe (ms)  avg queue (ms)          errors
+                   0.000           0.000           0.000        0 (0.0%)           0.000           0.000           0.000        0 (0.0%)
+write:             ops/s            kB/s           kB/op         retrans    avg RTT (ms)    avg exe (ms)  avg queue (ms)          errors
+                   0.000           0.000           0.000        0 (0.0%)           0.000           0.000           0.000        0 (0.0%)
+
+10.191.22.190:/FastPlus_Cloud_DC/batchlogs_backup mounted on /batchlogs_backup:
+
+           ops/s       rpc bklog
+           0.000           0.000
+
+read:              ops/s            kB/s           kB/op         retrans    avg RTT (ms)    avg exe (ms)  avg queue (ms)          errors
+                   0.000           0.000           0.000        0 (0.0%)           0.000           0.000           0.000        0 (0.0%)
+write:             ops/s            kB/s           kB/op         retrans    avg RTT (ms)    avg exe (ms)  avg queue (ms)          errors
+                   0.000           0.000           0.000        0 (0.0%)           0.000           0.000           0.000        0 (0.0%)
+
+10.191.22.190:/FastPlus_Cloud_DC/shared_lib mounted on /shared_lib:
+
+           ops/s       rpc bklog
+           0.000           0.000
+
+read:              ops/s            kB/s           kB/op         retrans    avg RTT (ms)    avg exe (ms)  avg queue (ms)          errors
+                   0.000           0.000           0.000        0 (0.0%)           0.000           0.000           0.000        0 (0.0%)
+write:             ops/s            kB/s           kB/op         retrans    avg RTT (ms)    avg exe (ms)  avg queue (ms)          errors
+                   0.000           0.000           0.000        0 (0.0%)           0.000           0.000           0.000        0 (0.0%)
+
+10.191.22.190:/FastPlus_Cloud_DC/logs_archive mounted on /logs_archive:
+
+           ops/s       rpc bklog
+           0.000           0.000
+
+read:              ops/s            kB/s           kB/op         retrans    avg RTT (ms)    avg exe (ms)  avg queue (ms)          errors
+                   0.000           0.000           0.000        0 (0.0%)           0.000           0.000           0.000        0 (0.0%)
+write:             ops/s            kB/s           kB/op         retrans    avg RTT (ms)    avg exe (ms)  avg queue (ms)          errors
+                   0.000           0.000           0.000        0 (0.0%)           0.000           0.000           0.000        0 (0.0%)
+
+10.191.22.190:/FastPlus_Cloud_DC/data mounted on /data:
+
+           ops/s       rpc bklog
+           0.000           0.000
+
+read:              ops/s            kB/s           kB/op         retrans    avg RTT (ms)    avg exe (ms)  avg queue (ms)          errors
+                   0.000           0.000           0.000        0 (0.0%)           0.000           0.000           0.000        0 (0.0%)
+write:             ops/s            kB/s           kB/op         retrans    avg RTT (ms)    avg exe (ms)  avg queue (ms)          errors
+                   0.000           0.000           0.000        0 (0.0%)           0.000           0.000           0.000        0 (0.0%)
+
+10.191.22.190:/FastPlus_Cloud_DC/doc-root mounted on /doc-root:
+
+           ops/s       rpc bklog
+           0.000           0.000
+
+read:              ops/s            kB/s           kB/op         retrans    avg RTT (ms)    avg exe (ms)  avg queue (ms)          errors
+                   0.000           0.000           0.000        0 (0.0%)           0.000           0.000           0.000        0 (0.0%)
+write:             ops/s            kB/s           kB/op         retrans    avg RTT (ms)    avg exe (ms)  avg queue (ms)          errors
+                   0.000           0.000           0.000        0 (0.0%)           0.000           0.000           0.000        0 (0.0%)
+
+10.191.22.190:/FastPlus_Cloud_DC/systemlogs mounted on /systemlogs:
+
+           ops/s       rpc bklog
+           0.000           0.000
+
+read:              ops/s            kB/s           kB/op         retrans    avg RTT (ms)    avg exe (ms)  avg queue (ms)          errors
+                   0.000           0.000           0.000        0 (0.0%)           0.000           0.000           0.000        0 (0.0%)
+write:             ops/s            kB/s           kB/op         retrans    avg RTT (ms)    avg exe (ms)  avg queue (ms)          errors
+                   0.000           0.000           0.000        0 (0.0%)           0.000           0.000           0.000        0 (0.0%)
+
+10.191.22.190:/FastPlus_Cloud_DC/batchlogs mounted on /batchlogs:
+
+           ops/s       rpc bklog
+           0.000           0.000
+
+read:              ops/s            kB/s           kB/op         retrans    avg RTT (ms)    avg exe (ms)  avg queue (ms)          errors
+                   0.000           0.000           0.000        0 (0.0%)           0.000           0.000           0.000        0 (0.0%)
+write:             ops/s            kB/s           kB/op         retrans    avg RTT (ms)    avg exe (ms)  avg queue (ms)          errors
+                   0.000           0.000           0.000        0 (0.0%)           0.000           0.000           0.000        0 (0.0%)
+
+10.191.22.190:/FastPlus_Cloud_DC/batchlogs_backup mounted on /batchlogs_backup:
+
+           ops/s       rpc bklog
+           0.000           0.000
+
+read:              ops/s            kB/s           kB/op         retrans    avg RTT (ms)    avg exe (ms)  avg queue (ms)          errors
+                   0.000           0.000           0.000        0 (0.0%)           0.000           0.000           0.000        0 (0.0%)
+write:             ops/s            kB/s           kB/op         retrans    avg RTT (ms)    avg exe (ms)  avg queue (ms)          errors
+                   0.000           0.000           0.000        0 (0.0%)           0.000           0.000           0.000        0 (0.0%)
+
+10.191.22.190:/FastPlus_Cloud_DC/shared_lib mounted on /shared_lib:
+
+           ops/s       rpc bklog
+           0.000           0.000
+
+read:              ops/s            kB/s           kB/op         retrans    avg RTT (ms)    avg exe (ms)  avg queue (ms)          errors
+                   0.000           0.000           0.000        0 (0.0%)           0.000           0.000           0.000        0 (0.0%)
+write:             ops/s            kB/s           kB/op         retrans    avg RTT (ms)    avg exe (ms)  avg queue (ms)          errors
+                   0.000           0.000           0.000        0 (0.0%)           0.000           0.000           0.000        0 (0.0%)
+
+10.191.22.190:/FastPlus_Cloud_DC/logs_archive mounted on /logs_archive:
+
+           ops/s       rpc bklog
+           0.000           0.000
+
+read:              ops/s            kB/s           kB/op         retrans    avg RTT (ms)    avg exe (ms)  avg queue (ms)          errors
+                   0.000           0.000           0.000        0 (0.0%)           0.000           0.000           0.000        0 (0.0%)
+write:             ops/s            kB/s           kB/op         retrans    avg RTT (ms)    avg exe (ms)  avg queue (ms)          errors
+                   0.000           0.000           0.000        0 (0.0%)           0.000           0.000           0.000        0 (0.0%)
+
+10.191.22.190:/FastPlus_Cloud_DC/data mounted on /data:
+
+           ops/s       rpc bklog
+           0.000           0.000
+
+read:              ops/s            kB/s           kB/op         retrans    avg RTT (ms)    avg exe (ms)  avg queue (ms)          errors
+                   0.000           0.000           0.000        0 (0.0%)           0.000           0.000           0.000        0 (0.0%)
+write:             ops/s            kB/s           kB/op         retrans    avg RTT (ms)    avg exe (ms)  avg queue (ms)          errors
+                   0.000           0.000           0.000        0 (0.0%)           0.000           0.000           0.000        0 (0.0%)
+
+10.191.22.190:/FastPlus_Cloud_DC/doc-root mounted on /doc-root:
+
+           ops/s       rpc bklog
+           0.000           0.000
+
+read:              ops/s            kB/s           kB/op         retrans    avg RTT (ms)    avg exe (ms)  avg queue (ms)          errors
+                   0.000           0.000           0.000        0 (0.0%)           0.000           0.000           0.000        0 (0.0%)
+write:             ops/s            kB/s           kB/op         retrans    avg RTT (ms)    avg exe (ms)  avg queue (ms)          errors
+                   0.000           0.000           0.000        0 (0.0%)           0.000           0.000           0.000        0 (0.0%)
+
+10.191.22.190:/FastPlus_Cloud_DC/systemlogs mounted on /systemlogs:
+
+           ops/s       rpc bklog
+           0.000           0.000
+
+read:              ops/s            kB/s           kB/op         retrans    avg RTT (ms)    avg exe (ms)  avg queue (ms)          errors
+                   0.000           0.000           0.000        0 (0.0%)           0.000           0.000           0.000        0 (0.0%)
+write:             ops/s            kB/s           kB/op         retrans    avg RTT (ms)    avg exe (ms)  avg queue (ms)          errors
+                   0.000           0.000           0.000        0 (0.0%)           0.000           0.000           0.000        0 (0.0%)
+
+10.191.22.190:/FastPlus_Cloud_DC/batchlogs mounted on /batchlogs:
+
+           ops/s       rpc bklog
+           0.000           0.000
+
+read:              ops/s            kB/s           kB/op         retrans    avg RTT (ms)    avg exe (ms)  avg queue (ms)          errors
+                   0.000           0.000           0.000        0 (0.0%)           0.000           0.000           0.000        0 (0.0%)
+write:             ops/s            kB/s           kB/op         retrans    avg RTT (ms)    avg exe (ms)  avg queue (ms)          errors
+                   0.000           0.000           0.000        0 (0.0%)           0.000           0.000           0.000        0 (0.0%)
+
+10.191.22.190:/FastPlus_Cloud_DC/batchlogs_backup mounted on /batchlogs_backup:
+
+           ops/s       rpc bklog
+           0.000           0.000
+
+read:              ops/s            kB/s           kB/op         retrans    avg RTT (ms)    avg exe (ms)  avg queue (ms)          errors
+                   0.000           0.000           0.000        0 (0.0%)           0.000           0.000           0.000        0 (0.0%)
+write:             ops/s            kB/s           kB/op         retrans    avg RTT (ms)    avg exe (ms)  avg queue (ms)          errors
+                   0.000           0.000           0.000        0 (0.0%)           0.000           0.000           0.000        0 (0.0%)
+
+10.191.22.190:/FastPlus_Cloud_DC/shared_lib mounted on /shared_lib:
+
+           ops/s       rpc bklog
+           0.000           0.000
+
+read:              ops/s            kB/s           kB/op         retrans    avg RTT (ms)    avg exe (ms)  avg queue (ms)          errors
+                   0.000           0.000           0.000        0 (0.0%)           0.000           0.000           0.000        0 (0.0%)
+write:             ops/s            kB/s           kB/op         retrans    avg RTT (ms)    avg exe (ms)  avg queue (ms)          errors
+                   0.000           0.000           0.000        0 (0.0%)           0.000           0.000           0.000        0 (0.0%)
+
+10.191.22.190:/FastPlus_Cloud_DC/logs_archive mounted on /logs_archive:
+
+           ops/s       rpc bklog
+           0.000           0.000
+
+read:              ops/s            kB/s           kB/op         retrans    avg RTT (ms)    avg exe (ms)  avg queue (ms)          errors
+                   0.000           0.000           0.000        0 (0.0%)           0.000           0.000           0.000        0 (0.0%)
+write:             ops/s            kB/s           kB/op         retrans    avg RTT (ms)    avg exe (ms)  avg queue (ms)          errors
+                   0.000           0.000           0.000        0 (0.0%)           0.000           0.000           0.000        0 (0.0%)
+
+10.191.22.190:/FastPlus_Cloud_DC/data mounted on /data:
+
+           ops/s       rpc bklog
+          21.000           0.000
+
+read:              ops/s            kB/s           kB/op         retrans    avg RTT (ms)    avg exe (ms)  avg queue (ms)          errors
+                   0.000           0.000           0.000        0 (0.0%)           0.000           0.000           0.000        0 (0.0%)
+write:             ops/s            kB/s           kB/op         retrans    avg RTT (ms)    avg exe (ms)  avg queue (ms)          errors
+                   0.000           0.000           0.000        0 (0.0%)           0.000           0.000           0.000        0 (0.0%)
+
+10.191.22.190:/FastPlus_Cloud_DC/doc-root mounted on /doc-root:
+
+           ops/s       rpc bklog
+          21.000           0.000
+
+read:              ops/s            kB/s           kB/op         retrans    avg RTT (ms)    avg exe (ms)  avg queue (ms)          errors
+                   0.000           0.000           0.000        0 (0.0%)           0.000           0.000           0.000        0 (0.0%)
+write:             ops/s            kB/s           kB/op         retrans    avg RTT (ms)    avg exe (ms)  avg queue (ms)          errors
+                   0.000           0.000           0.000        0 (0.0%)           0.000           0.000           0.000        0 (0.0%)
+
+10.191.22.190:/FastPlus_Cloud_DC/systemlogs mounted on /systemlogs:
+
+           ops/s       rpc bklog
+          21.000           0.000
+
+read:              ops/s            kB/s           kB/op         retrans    avg RTT (ms)    avg exe (ms)  avg queue (ms)          errors
+                   0.000           0.000           0.000        0 (0.0%)           0.000           0.000           0.000        0 (0.0%)
+write:             ops/s            kB/s           kB/op         retrans    avg RTT (ms)    avg exe (ms)  avg queue (ms)          errors
+                   0.000           0.000           0.000        0 (0.0%)           0.000           0.000           0.000        0 (0.0%)
+
+10.191.22.190:/FastPlus_Cloud_DC/batchlogs mounted on /batchlogs:
+
+           ops/s       rpc bklog
+          21.000           0.000
+
+read:              ops/s            kB/s           kB/op         retrans    avg RTT (ms)    avg exe (ms)  avg queue (ms)          errors
+                   0.000           0.000           0.000        0 (0.0%)           0.000           0.000           0.000        0 (0.0%)
+write:             ops/s            kB/s           kB/op         retrans    avg RTT (ms)    avg exe (ms)  avg queue (ms)          errors
+                   0.000           0.000           0.000        0 (0.0%)           0.000           0.000           0.000        0 (0.0%)
+
+10.191.22.190:/FastPlus_Cloud_DC/batchlogs_backup mounted on /batchlogs_backup:
+
+           ops/s       rpc bklog
+          21.000           0.000
+
+read:              ops/s            kB/s           kB/op         retrans    avg RTT (ms)    avg exe (ms)  avg queue (ms)          errors
+                   0.000           0.000           0.000        0 (0.0%)           0.000           0.000           0.000        0 (0.0%)
+write:             ops/s            kB/s           kB/op         retrans    avg RTT (ms)    avg exe (ms)  avg queue (ms)          errors
+                   0.000           0.000           0.000        0 (0.0%)           0.000           0.000           0.000        0 (0.0%)
+
+10.191.22.190:/FastPlus_Cloud_DC/shared_lib mounted on /shared_lib:
+
+           ops/s       rpc bklog
+          21.000           0.000
+
+read:              ops/s            kB/s           kB/op         retrans    avg RTT (ms)    avg exe (ms)  avg queue (ms)          errors
+                   0.000           0.000           0.000        0 (0.0%)           0.000           0.000           0.000        0 (0.0%)
+write:             ops/s            kB/s           kB/op         retrans    avg RTT (ms)    avg exe (ms)  avg queue (ms)          errors
+                   0.000           0.000           0.000        0 (0.0%)           0.000           0.000           0.000        0 (0.0%)
+
+10.191.22.190:/FastPlus_Cloud_DC/logs_archive mounted on /logs_archive:
+
+           ops/s       rpc bklog
+          21.000           0.000
+
+read:              ops/s            kB/s           kB/op         retrans    avg RTT (ms)    avg exe (ms)  avg queue (ms)          errors
+                   0.000           0.000           0.000        0 (0.0%)           0.000           0.000           0.000        0 (0.0%)
+write:             ops/s            kB/s           kB/op         retrans    avg RTT (ms)    avg exe (ms)  avg queue (ms)          errors
+                   0.000           0.000           0.000        0 (0.0%)           0.000           0.000           0.000        0 (0.0%)
+
+10.191.22.190:/FastPlus_Cloud_DC/data mounted on /data:
+
+           ops/s       rpc bklog
+           0.000           0.000
+
+read:              ops/s            kB/s           kB/op         retrans    avg RTT (ms)    avg exe (ms)  avg queue (ms)          errors
+                   0.000           0.000           0.000        0 (0.0%)           0.000           0.000           0.000        0 (0.0%)
+write:             ops/s            kB/s           kB/op         retrans    avg RTT (ms)    avg exe (ms)  avg queue (ms)          errors
+                   0.000           0.000           0.000        0 (0.0%)           0.000           0.000           0.000        0 (0.0%)
+
+10.191.22.190:/FastPlus_Cloud_DC/doc-root mounted on /doc-root:
+
+           ops/s       rpc bklog
+           0.000           0.000
+
+read:              ops/s            kB/s           kB/op         retrans    avg RTT (ms)    avg exe (ms)  avg queue (ms)          errors
+                   0.000           0.000           0.000        0 (0.0%)           0.000           0.000           0.000        0 (0.0%)
+write:             ops/s            kB/s           kB/op         retrans    avg RTT (ms)    avg exe (ms)  avg queue (ms)          errors
+                   0.000           0.000           0.000        0 (0.0%)           0.000           0.000           0.000        0 (0.0%)
+
+10.191.22.190:/FastPlus_Cloud_DC/systemlogs mounted on /systemlogs:
+
+           ops/s       rpc bklog
+           0.000           0.000
+
+read:              ops/s            kB/s           kB/op         retrans    avg RTT (ms)    avg exe (ms)  avg queue (ms)          errors
+                   0.000           0.000           0.000        0 (0.0%)           0.000           0.000           0.000        0 (0.0%)
+write:             ops/s            kB/s           kB/op         retrans    avg RTT (ms)    avg exe (ms)  avg queue (ms)          errors
+                   0.000           0.000           0.000        0 (0.0%)           0.000           0.000           0.000        0 (0.0%)
+
+10.191.22.190:/FastPlus_Cloud_DC/batchlogs mounted on /batchlogs:
+
+           ops/s       rpc bklog
+           0.000           0.000
+
+read:              ops/s            kB/s           kB/op         retrans    avg RTT (ms)    avg exe (ms)  avg queue (ms)          errors
+                   0.000           0.000           0.000        0 (0.0%)           0.000           0.000           0.000        0 (0.0%)
+write:             ops/s            kB/s           kB/op         retrans    avg RTT (ms)    avg exe (ms)  avg queue (ms)          errors
+                   0.000           0.000           0.000        0 (0.0%)           0.000           0.000           0.000        0 (0.0%)
+
+10.191.22.190:/FastPlus_Cloud_DC/batchlogs_backup mounted on /batchlogs_backup:
+
+           ops/s       rpc bklog
+           0.000           0.000
+
+read:              ops/s            kB/s           kB/op         retrans    avg RTT (ms)    avg exe (ms)  avg queue (ms)          errors
+                   0.000           0.000           0.000        0 (0.0%)           0.000           0.000           0.000        0 (0.0%)
+write:             ops/s            kB/s           kB/op         retrans    avg RTT (ms)    avg exe (ms)  avg queue (ms)          errors
+                   0.000           0.000           0.000        0 (0.0%)           0.000           0.000           0.000        0 (0.0%)
+
+10.191.22.190:/FastPlus_Cloud_DC/shared_lib mounted on /shared_lib:
+
+           ops/s       rpc bklog
+           0.000           0.000
+
+read:              ops/s            kB/s           kB/op         retrans    avg RTT (ms)    avg exe (ms)  avg queue (ms)          errors
+                   0.000           0.000           0.000        0 (0.0%)           0.000           0.000           0.000        0 (0.0%)
+write:             ops/s            kB/s           kB/op         retrans    avg RTT (ms)    avg exe (ms)  avg queue (ms)          errors
+                   0.000           0.000           0.000        0 (0.0%)           0.000           0.000           0.000        0 (0.0%)
+
+10.191.22.190:/FastPlus_Cloud_DC/logs_archive mounted on /logs_archive:
+
+           ops/s       rpc bklog
+           0.000           0.000
+
+read:              ops/s            kB/s           kB/op         retrans    avg RTT (ms)    avg exe (ms)  avg queue (ms)          errors
+                   0.000           0.000           0.000        0 (0.0%)           0.000           0.000           0.000        0 (0.0%)
+write:             ops/s            kB/s           kB/op         retrans    avg RTT (ms)    avg exe (ms)  avg queue (ms)          errors
+                   0.000           0.000           0.000        0 (0.0%)           0.000           0.000           0.000        0 (0.0%)
+
+10.191.22.190:/FastPlus_Cloud_DC/data mounted on /data:
+
+           ops/s       rpc bklog
+           0.000           0.000
+
+read:              ops/s            kB/s           kB/op         retrans    avg RTT (ms)    avg exe (ms)  avg queue (ms)          errors
+                   0.000           0.000           0.000        0 (0.0%)           0.000           0.000           0.000        0 (0.0%)
+write:             ops/s            kB/s           kB/op         retrans    avg RTT (ms)    avg exe (ms)  avg queue (ms)          errors
+                   0.000           0.000           0.000        0 (0.0%)           0.000           0.000           0.000        0 (0.0%)
+
+10.191.22.190:/FastPlus_Cloud_DC/doc-root mounted on /doc-root:
+
+           ops/s       rpc bklog
+           0.000           0.000
+
+read:              ops/s            kB/s           kB/op         retrans    avg RTT (ms)    avg exe (ms)  avg queue (ms)          errors
+                   0.000           0.000           0.000        0 (0.0%)           0.000           0.000           0.000        0 (0.0%)
+write:             ops/s            kB/s           kB/op         retrans    avg RTT (ms)    avg exe (ms)  avg queue (ms)          errors
+                   0.000           0.000           0.000        0 (0.0%)           0.000           0.000           0.000        0 (0.0%)
+
+10.191.22.190:/FastPlus_Cloud_DC/systemlogs mounted on /systemlogs:
+
+           ops/s       rpc bklog
+           0.000           0.000
+
+read:              ops/s            kB/s           kB/op         retrans    avg RTT (ms)    avg exe (ms)  avg queue (ms)          errors
+                   0.000           0.000           0.000        0 (0.0%)           0.000           0.000           0.000        0 (0.0%)
+write:             ops/s            kB/s           kB/op         retrans    avg RTT (ms)    avg exe (ms)  avg queue (ms)          errors
+                   0.000           0.000           0.000        0 (0.0%)           0.000           0.000           0.000        0 (0.0%)
+
+10.191.22.190:/FastPlus_Cloud_DC/batchlogs mounted on /batchlogs:
+
+           ops/s       rpc bklog
+           0.000           0.000
+
+read:              ops/s            kB/s           kB/op         retrans    avg RTT (ms)    avg exe (ms)  avg queue (ms)          errors
+                   0.000           0.000           0.000        0 (0.0%)           0.000           0.000           0.000        0 (0.0%)
+write:             ops/s            kB/s           kB/op         retrans    avg RTT (ms)    avg exe (ms)  avg queue (ms)          errors
+                   0.000           0.000           0.000        0 (0.0%)           0.000           0.000           0.000        0 (0.0%)
+
+10.191.22.190:/FastPlus_Cloud_DC/batchlogs_backup mounted on /batchlogs_backup:
+
+           ops/s       rpc bklog
+           0.000           0.000
+
+read:              ops/s            kB/s           kB/op         retrans    avg RTT (ms)    avg exe (ms)  avg queue (ms)          errors
+                   0.000           0.000           0.000        0 (0.0%)           0.000           0.000           0.000        0 (0.0%)
+write:             ops/s            kB/s           kB/op         retrans    avg RTT (ms)    avg exe (ms)  avg queue (ms)          errors
+                   0.000           0.000           0.000        0 (0.0%)           0.000           0.000           0.000        0 (0.0%)
+
+10.191.22.190:/FastPlus_Cloud_DC/shared_lib mounted on /shared_lib:
+
+           ops/s       rpc bklog
+           0.000           0.000
+
+read:              ops/s            kB/s           kB/op         retrans    avg RTT (ms)    avg exe (ms)  avg queue (ms)          errors
+                   0.000           0.000           0.000        0 (0.0%)           0.000           0.000           0.000        0 (0.0%)
+write:             ops/s            kB/s           kB/op         retrans    avg RTT (ms)    avg exe (ms)  avg queue (ms)          errors
+                   0.000           0.000           0.000        0 (0.0%)           0.000           0.000           0.000        0 (0.0%)
+
+10.191.22.190:/FastPlus_Cloud_DC/logs_archive mounted on /logs_archive:
+
+           ops/s       rpc bklog
+           0.000           0.000
+
+read:              ops/s            kB/s           kB/op         retrans    avg RTT (ms)    avg exe (ms)  avg queue (ms)          errors
+                   0.000           0.000           0.000        0 (0.0%)           0.000           0.000           0.000        0 (0.0%)
+write:             ops/s            kB/s           kB/op         retrans    avg RTT (ms)    avg exe (ms)  avg queue (ms)          errors
+                   0.000           0.000           0.000        0 (0.0%)           0.000           0.000           0.000        0 (0.0%)
+[root@cmpcprgovd210 ~]# ss -tan | grep 2049
+ESTAB      0      0          10.191.144.210:872        10.191.22.190:2049
+[root@cmpcprgovd210 ~]#
+[root@cmpcprgovd210 ~]# nfsiostat 5 12
+
+10.191.22.190:/FastPlus_Cloud_DC/data mounted on /data:
+
+           ops/s       rpc bklog
+        1537.708           0.000
+
+read:              ops/s            kB/s           kB/op         retrans    avg RTT (ms)    avg exe (ms)  avg queue (ms)          errors
+                 630.310       35679.281          56.606        0 (0.0%)           4.228           4.370           0.106        8 (0.0%)
+write:             ops/s            kB/s           kB/op         retrans    avg RTT (ms)    avg exe (ms)  avg queue (ms)          errors
+                   0.050           3.228          64.372        0 (0.0%)          10.526         351.977         341.435        0 (0.0%)
+
+10.191.22.190:/FastPlus_Cloud_DC/doc-root mounted on /doc-root:
+
+           ops/s       rpc bklog
+        1537.708           0.000
+
+read:              ops/s            kB/s           kB/op         retrans    avg RTT (ms)    avg exe (ms)  avg queue (ms)          errors
+                 630.310       35679.281          56.606        0 (0.0%)           4.228           4.370           0.106        8 (0.0%)
+write:             ops/s            kB/s           kB/op         retrans    avg RTT (ms)    avg exe (ms)  avg queue (ms)          errors
+                   0.050           3.228          64.372        0 (0.0%)          10.526         351.977         341.435        0 (0.0%)
+
+10.191.22.190:/FastPlus_Cloud_DC/systemlogs mounted on /systemlogs:
+
+           ops/s       rpc bklog
+        1537.708           0.000
+
+read:              ops/s            kB/s           kB/op         retrans    avg RTT (ms)    avg exe (ms)  avg queue (ms)          errors
+                 630.310       35679.281          56.606        0 (0.0%)           4.228           4.370           0.106        8 (0.0%)
+write:             ops/s            kB/s           kB/op         retrans    avg RTT (ms)    avg exe (ms)  avg queue (ms)          errors
+                   0.050           3.228          64.372        0 (0.0%)          10.526         351.977         341.435        0 (0.0%)
+
+10.191.22.190:/FastPlus_Cloud_DC/batchlogs mounted on /batchlogs:
+
+           ops/s       rpc bklog
+        1537.708           0.000
+
+read:              ops/s            kB/s           kB/op         retrans    avg RTT (ms)    avg exe (ms)  avg queue (ms)          errors
+                 630.310       35679.281          56.606        0 (0.0%)           4.228           4.370           0.106        8 (0.0%)
+write:             ops/s            kB/s           kB/op         retrans    avg RTT (ms)    avg exe (ms)  avg queue (ms)          errors
+                   0.050           3.228          64.372        0 (0.0%)          10.526         351.977         341.435        0 (0.0%)
+
+10.191.22.190:/FastPlus_Cloud_DC/batchlogs_backup mounted on /batchlogs_backup:
+
+           ops/s       rpc bklog
+        1537.708           0.000
+
+read:              ops/s            kB/s           kB/op         retrans    avg RTT (ms)    avg exe (ms)  avg queue (ms)          errors
+                 630.310       35679.281          56.606        0 (0.0%)           4.228           4.370           0.106        8 (0.0%)
+write:             ops/s            kB/s           kB/op         retrans    avg RTT (ms)    avg exe (ms)  avg queue (ms)          errors
+                   0.050           3.228          64.372        0 (0.0%)          10.526         351.977         341.435        0 (0.0%)
+
+10.191.22.190:/FastPlus_Cloud_DC/shared_lib mounted on /shared_lib:
+
+           ops/s       rpc bklog
+        1537.708           0.000
+
+read:              ops/s            kB/s           kB/op         retrans    avg RTT (ms)    avg exe (ms)  avg queue (ms)          errors
+                 630.310       35679.281          56.606        0 (0.0%)           4.228           4.370           0.106        8 (0.0%)
+write:             ops/s            kB/s           kB/op         retrans    avg RTT (ms)    avg exe (ms)  avg queue (ms)          errors
+                   0.050           3.228          64.372        0 (0.0%)          10.526         351.977         341.435        0 (0.0%)
+
+10.191.22.190:/FastPlus_Cloud_DC/logs_archive mounted on /logs_archive:
+
+           ops/s       rpc bklog
+        1537.708           0.000
+
+read:              ops/s            kB/s           kB/op         retrans    avg RTT (ms)    avg exe (ms)  avg queue (ms)          errors
+                 630.310       35679.281          56.606        0 (0.0%)           4.228           4.370           0.106        8 (0.0%)
+write:             ops/s            kB/s           kB/op         retrans    avg RTT (ms)    avg exe (ms)  avg queue (ms)          errors
+                   0.050           3.228          64.372        0 (0.0%)          10.526         351.977         341.435        0 (0.0%)
+
+10.191.22.190:/FastPlus_Cloud_DC/data mounted on /data:
+
+           ops/s       rpc bklog
+           0.000           0.000
+
+read:              ops/s            kB/s           kB/op         retrans    avg RTT (ms)    avg exe (ms)  avg queue (ms)          errors
+                   0.000           0.000           0.000        0 (0.0%)           0.000           0.000           0.000        0 (0.0%)
+write:             ops/s            kB/s           kB/op         retrans    avg RTT (ms)    avg exe (ms)  avg queue (ms)          errors
+                   0.000           0.000           0.000        0 (0.0%)           0.000           0.000           0.000        0 (0.0%)
+
+10.191.22.190:/FastPlus_Cloud_DC/doc-root mounted on /doc-root:
+
+           ops/s       rpc bklog
+           0.000           0.000
+
+read:              ops/s            kB/s           kB/op         retrans    avg RTT (ms)    avg exe (ms)  avg queue (ms)          errors
+                   0.000           0.000           0.000        0 (0.0%)           0.000           0.000           0.000        0 (0.0%)
+write:             ops/s            kB/s           kB/op         retrans    avg RTT (ms)    avg exe (ms)  avg queue (ms)          errors
+                   0.000           0.000           0.000        0 (0.0%)           0.000           0.000           0.000        0 (0.0%)
+
+10.191.22.190:/FastPlus_Cloud_DC/systemlogs mounted on /systemlogs:
+
+           ops/s       rpc bklog
+           0.000           0.000
+
+read:              ops/s            kB/s           kB/op         retrans    avg RTT (ms)    avg exe (ms)  avg queue (ms)          errors
+                   0.000           0.000           0.000        0 (0.0%)           0.000           0.000           0.000        0 (0.0%)
+write:             ops/s            kB/s           kB/op         retrans    avg RTT (ms)    avg exe (ms)  avg queue (ms)          errors
+                   0.000           0.000           0.000        0 (0.0%)           0.000           0.000           0.000        0 (0.0%)
+
+10.191.22.190:/FastPlus_Cloud_DC/batchlogs mounted on /batchlogs:
+
+           ops/s       rpc bklog
+           0.000           0.000
+
+read:              ops/s            kB/s           kB/op         retrans    avg RTT (ms)    avg exe (ms)  avg queue (ms)          errors
+                   0.000           0.000           0.000        0 (0.0%)           0.000           0.000           0.000        0 (0.0%)
+write:             ops/s            kB/s           kB/op         retrans    avg RTT (ms)    avg exe (ms)  avg queue (ms)          errors
+                   0.000           0.000           0.000        0 (0.0%)           0.000           0.000           0.000        0 (0.0%)
+
+10.191.22.190:/FastPlus_Cloud_DC/batchlogs_backup mounted on /batchlogs_backup:
+
+           ops/s       rpc bklog
+           0.000           0.000
+
+read:              ops/s            kB/s           kB/op         retrans    avg RTT (ms)    avg exe (ms)  avg queue (ms)          errors
+                   0.000           0.000           0.000        0 (0.0%)           0.000           0.000           0.000        0 (0.0%)
+write:             ops/s            kB/s           kB/op         retrans    avg RTT (ms)    avg exe (ms)  avg queue (ms)          errors
+                   0.000           0.000           0.000        0 (0.0%)           0.000           0.000           0.000        0 (0.0%)
+
+10.191.22.190:/FastPlus_Cloud_DC/shared_lib mounted on /shared_lib:
+
+           ops/s       rpc bklog
+           0.000           0.000
+
+read:              ops/s            kB/s           kB/op         retrans    avg RTT (ms)    avg exe (ms)  avg queue (ms)          errors
+                   0.000           0.000           0.000        0 (0.0%)           0.000           0.000           0.000        0 (0.0%)
+write:             ops/s            kB/s           kB/op         retrans    avg RTT (ms)    avg exe (ms)  avg queue (ms)          errors
+                   0.000           0.000           0.000        0 (0.0%)           0.000           0.000           0.000        0 (0.0%)
+
+10.191.22.190:/FastPlus_Cloud_DC/logs_archive mounted on /logs_archive:
+
+           ops/s       rpc bklog
+           0.000           0.000
+
+read:              ops/s            kB/s           kB/op         retrans    avg RTT (ms)    avg exe (ms)  avg queue (ms)          errors
+                   0.000           0.000           0.000        0 (0.0%)           0.000           0.000           0.000        0 (0.0%)
+write:             ops/s            kB/s           kB/op         retrans    avg RTT (ms)    avg exe (ms)  avg queue (ms)          errors
+                   0.000           0.000           0.000        0 (0.0%)           0.000           0.000           0.000        0 (0.0%)
+
+10.191.22.190:/FastPlus_Cloud_DC/data mounted on /data:
+
+           ops/s       rpc bklog
+           2.800           0.000
+
+read:              ops/s            kB/s           kB/op         retrans    avg RTT (ms)    avg exe (ms)  avg queue (ms)          errors
+                   0.000           0.000           0.000        0 (0.0%)           0.000           0.000           0.000        0 (0.0%)
+write:             ops/s            kB/s           kB/op         retrans    avg RTT (ms)    avg exe (ms)  avg queue (ms)          errors
+                   0.000           0.000           0.000        0 (0.0%)           0.000           0.000           0.000        0 (0.0%)
+
+10.191.22.190:/FastPlus_Cloud_DC/doc-root mounted on /doc-root:
+
+           ops/s       rpc bklog
+           2.800           0.000
+
+read:              ops/s            kB/s           kB/op         retrans    avg RTT (ms)    avg exe (ms)  avg queue (ms)          errors
+                   0.000           0.000           0.000        0 (0.0%)           0.000           0.000           0.000        0 (0.0%)
+write:             ops/s            kB/s           kB/op         retrans    avg RTT (ms)    avg exe (ms)  avg queue (ms)          errors
+                   0.000           0.000           0.000        0 (0.0%)           0.000           0.000           0.000        0 (0.0%)
+
+10.191.22.190:/FastPlus_Cloud_DC/systemlogs mounted on /systemlogs:
+
+           ops/s       rpc bklog
+           2.800           0.000
+
+read:              ops/s            kB/s           kB/op         retrans    avg RTT (ms)    avg exe (ms)  avg queue (ms)          errors
+                   0.000           0.000           0.000        0 (0.0%)           0.000           0.000           0.000        0 (0.0%)
+write:             ops/s            kB/s           kB/op         retrans    avg RTT (ms)    avg exe (ms)  avg queue (ms)          errors
+                   0.000           0.000           0.000        0 (0.0%)           0.000           0.000           0.000        0 (0.0%)
+
+10.191.22.190:/FastPlus_Cloud_DC/batchlogs mounted on /batchlogs:
+
+           ops/s       rpc bklog
+           2.800           0.000
+
+read:              ops/s            kB/s           kB/op         retrans    avg RTT (ms)    avg exe (ms)  avg queue (ms)          errors
+                   0.000           0.000           0.000        0 (0.0%)           0.000           0.000           0.000        0 (0.0%)
+write:             ops/s            kB/s           kB/op         retrans    avg RTT (ms)    avg exe (ms)  avg queue (ms)          errors
+                   0.000           0.000           0.000        0 (0.0%)           0.000           0.000           0.000        0 (0.0%)
+
+10.191.22.190:/FastPlus_Cloud_DC/batchlogs_backup mounted on /batchlogs_backup:
+
+           ops/s       rpc bklog
+           2.800           0.000
+
+read:              ops/s            kB/s           kB/op         retrans    avg RTT (ms)    avg exe (ms)  avg queue (ms)          errors
+                   0.000           0.000           0.000        0 (0.0%)           0.000           0.000           0.000        0 (0.0%)
+write:             ops/s            kB/s           kB/op         retrans    avg RTT (ms)    avg exe (ms)  avg queue (ms)          errors
+                   0.000           0.000           0.000        0 (0.0%)           0.000           0.000           0.000        0 (0.0%)
+
+10.191.22.190:/FastPlus_Cloud_DC/shared_lib mounted on /shared_lib:
+
+           ops/s       rpc bklog
+           2.800           0.000
+
+read:              ops/s            kB/s           kB/op         retrans    avg RTT (ms)    avg exe (ms)  avg queue (ms)          errors
+                   0.000           0.000           0.000        0 (0.0%)           0.000           0.000           0.000        0 (0.0%)
+write:             ops/s            kB/s           kB/op         retrans    avg RTT (ms)    avg exe (ms)  avg queue (ms)          errors
+                   0.000           0.000           0.000        0 (0.0%)           0.000           0.000           0.000        0 (0.0%)
+
+10.191.22.190:/FastPlus_Cloud_DC/logs_archive mounted on /logs_archive:
+
+           ops/s       rpc bklog
+           2.800           0.000
+
+read:              ops/s            kB/s           kB/op         retrans    avg RTT (ms)    avg exe (ms)  avg queue (ms)          errors
+                   0.000           0.000           0.000        0 (0.0%)           0.000           0.000           0.000        0 (0.0%)
+write:             ops/s            kB/s           kB/op         retrans    avg RTT (ms)    avg exe (ms)  avg queue (ms)          errors
+                   0.000           0.000           0.000        0 (0.0%)           0.000           0.000           0.000        0 (0.0%)
+
+10.191.22.190:/FastPlus_Cloud_DC/data mounted on /data:
+
+           ops/s       rpc bklog
+           0.000           0.000
+
+read:              ops/s            kB/s           kB/op         retrans    avg RTT (ms)    avg exe (ms)  avg queue (ms)          errors
+                   0.000           0.000           0.000        0 (0.0%)           0.000           0.000           0.000        0 (0.0%)
+write:             ops/s            kB/s           kB/op         retrans    avg RTT (ms)    avg exe (ms)  avg queue (ms)          errors
+                   0.000           0.000           0.000        0 (0.0%)           0.000           0.000           0.000        0 (0.0%)
+
+10.191.22.190:/FastPlus_Cloud_DC/doc-root mounted on /doc-root:
+
+           ops/s       rpc bklog
+           0.000           0.000
+
+read:              ops/s            kB/s           kB/op         retrans    avg RTT (ms)    avg exe (ms)  avg queue (ms)          errors
+                   0.000           0.000           0.000        0 (0.0%)           0.000           0.000           0.000        0 (0.0%)
+write:             ops/s            kB/s           kB/op         retrans    avg RTT (ms)    avg exe (ms)  avg queue (ms)          errors
+                   0.000           0.000           0.000        0 (0.0%)           0.000           0.000           0.000        0 (0.0%)
+
+10.191.22.190:/FastPlus_Cloud_DC/systemlogs mounted on /systemlogs:
+
+           ops/s       rpc bklog
+           0.000           0.000
+
+read:              ops/s            kB/s           kB/op         retrans    avg RTT (ms)    avg exe (ms)  avg queue (ms)          errors
+                   0.000           0.000           0.000        0 (0.0%)           0.000           0.000           0.000        0 (0.0%)
+write:             ops/s            kB/s           kB/op         retrans    avg RTT (ms)    avg exe (ms)  avg queue (ms)          errors
+                   0.000           0.000           0.000        0 (0.0%)           0.000           0.000           0.000        0 (0.0%)
+
+10.191.22.190:/FastPlus_Cloud_DC/batchlogs mounted on /batchlogs:
+
+           ops/s       rpc bklog
+           0.000           0.000
+
+read:              ops/s            kB/s           kB/op         retrans    avg RTT (ms)    avg exe (ms)  avg queue (ms)          errors
+                   0.000           0.000           0.000        0 (0.0%)           0.000           0.000           0.000        0 (0.0%)
+write:             ops/s            kB/s           kB/op         retrans    avg RTT (ms)    avg exe (ms)  avg queue (ms)          errors
+                   0.000           0.000           0.000        0 (0.0%)           0.000           0.000           0.000        0 (0.0%)
+
+10.191.22.190:/FastPlus_Cloud_DC/batchlogs_backup mounted on /batchlogs_backup:
+
+           ops/s       rpc bklog
+           0.000           0.000
+
+read:              ops/s            kB/s           kB/op         retrans    avg RTT (ms)    avg exe (ms)  avg queue (ms)          errors
+                   0.000           0.000           0.000        0 (0.0%)           0.000           0.000           0.000        0 (0.0%)
+write:             ops/s            kB/s           kB/op         retrans    avg RTT (ms)    avg exe (ms)  avg queue (ms)          errors
+                   0.000           0.000           0.000        0 (0.0%)           0.000           0.000           0.000        0 (0.0%)
+
+10.191.22.190:/FastPlus_Cloud_DC/shared_lib mounted on /shared_lib:
+
+           ops/s       rpc bklog
+           0.000           0.000
+
+read:              ops/s            kB/s           kB/op         retrans    avg RTT (ms)    avg exe (ms)  avg queue (ms)          errors
+                   0.000           0.000           0.000        0 (0.0%)           0.000           0.000           0.000        0 (0.0%)
+write:             ops/s            kB/s           kB/op         retrans    avg RTT (ms)    avg exe (ms)  avg queue (ms)          errors
+                   0.000           0.000           0.000        0 (0.0%)           0.000           0.000           0.000        0 (0.0%)
+
+10.191.22.190:/FastPlus_Cloud_DC/logs_archive mounted on /logs_archive:
+
+           ops/s       rpc bklog
+           0.000           0.000
+
+read:              ops/s            kB/s           kB/op         retrans    avg RTT (ms)    avg exe (ms)  avg queue (ms)          errors
+                   0.000           0.000           0.000        0 (0.0%)           0.000           0.000           0.000        0 (0.0%)
+write:             ops/s            kB/s           kB/op         retrans    avg RTT (ms)    avg exe (ms)  avg queue (ms)          errors
+                   0.000           0.000           0.000        0 (0.0%)           0.000           0.000           0.000        0 (0.0%)
+
+10.191.22.190:/FastPlus_Cloud_DC/data mounted on /data:
+
+           ops/s       rpc bklog
+           2.800           0.000
+
+read:              ops/s            kB/s           kB/op         retrans    avg RTT (ms)    avg exe (ms)  avg queue (ms)          errors
+                   0.000           0.000           0.000        0 (0.0%)           0.000           0.000           0.000        0 (0.0%)
+write:             ops/s            kB/s           kB/op         retrans    avg RTT (ms)    avg exe (ms)  avg queue (ms)          errors
+                   0.000           0.000           0.000        0 (0.0%)           0.000           0.000           0.000        0 (0.0%)
+
+10.191.22.190:/FastPlus_Cloud_DC/doc-root mounted on /doc-root:
+
+           ops/s       rpc bklog
+           2.800           0.000
+
+read:              ops/s            kB/s           kB/op         retrans    avg RTT (ms)    avg exe (ms)  avg queue (ms)          errors
+                   0.000           0.000           0.000        0 (0.0%)           0.000           0.000           0.000        0 (0.0%)
+write:             ops/s            kB/s           kB/op         retrans    avg RTT (ms)    avg exe (ms)  avg queue (ms)          errors
+                   0.000           0.000           0.000        0 (0.0%)           0.000           0.000           0.000        0 (0.0%)
+
+10.191.22.190:/FastPlus_Cloud_DC/systemlogs mounted on /systemlogs:
+
+           ops/s       rpc bklog
+           2.800           0.000
+
+read:              ops/s            kB/s           kB/op         retrans    avg RTT (ms)    avg exe (ms)  avg queue (ms)          errors
+                   0.000           0.000           0.000        0 (0.0%)           0.000           0.000           0.000        0 (0.0%)
+write:             ops/s            kB/s           kB/op         retrans    avg RTT (ms)    avg exe (ms)  avg queue (ms)          errors
+                   0.000           0.000           0.000        0 (0.0%)           0.000           0.000           0.000        0 (0.0%)
+
+10.191.22.190:/FastPlus_Cloud_DC/batchlogs mounted on /batchlogs:
+
+           ops/s       rpc bklog
+           2.800           0.000
+
+read:              ops/s            kB/s           kB/op         retrans    avg RTT (ms)    avg exe (ms)  avg queue (ms)          errors
+                   0.000           0.000           0.000        0 (0.0%)           0.000           0.000           0.000        0 (0.0%)
+write:             ops/s            kB/s           kB/op         retrans    avg RTT (ms)    avg exe (ms)  avg queue (ms)          errors
+                   0.000           0.000           0.000        0 (0.0%)           0.000           0.000           0.000        0 (0.0%)
+
+10.191.22.190:/FastPlus_Cloud_DC/batchlogs_backup mounted on /batchlogs_backup:
+
+           ops/s       rpc bklog
+           2.800           0.000
+
+read:              ops/s            kB/s           kB/op         retrans    avg RTT (ms)    avg exe (ms)  avg queue (ms)          errors
+                   0.000           0.000           0.000        0 (0.0%)           0.000           0.000           0.000        0 (0.0%)
+write:             ops/s            kB/s           kB/op         retrans    avg RTT (ms)    avg exe (ms)  avg queue (ms)          errors
+                   0.000           0.000           0.000        0 (0.0%)           0.000           0.000           0.000        0 (0.0%)
+
+10.191.22.190:/FastPlus_Cloud_DC/shared_lib mounted on /shared_lib:
+
+           ops/s       rpc bklog
+           2.800           0.000
+
+read:              ops/s            kB/s           kB/op         retrans    avg RTT (ms)    avg exe (ms)  avg queue (ms)          errors
+                   0.000           0.000           0.000        0 (0.0%)           0.000           0.000           0.000        0 (0.0%)
+write:             ops/s            kB/s           kB/op         retrans    avg RTT (ms)    avg exe (ms)  avg queue (ms)          errors
+                   0.000           0.000           0.000        0 (0.0%)           0.000           0.000           0.000        0 (0.0%)
+
+10.191.22.190:/FastPlus_Cloud_DC/logs_archive mounted on /logs_archive:
+
+           ops/s       rpc bklog
+           2.800           0.000
+
+read:              ops/s            kB/s           kB/op         retrans    avg RTT (ms)    avg exe (ms)  avg queue (ms)          errors
+                   0.000           0.000           0.000        0 (0.0%)           0.000           0.000           0.000        0 (0.0%)
+write:             ops/s            kB/s           kB/op         retrans    avg RTT (ms)    avg exe (ms)  avg queue (ms)          errors
+                   0.000           0.000           0.000        0 (0.0%)           0.000           0.000           0.000        0 (0.0%)
+
+10.191.22.190:/FastPlus_Cloud_DC/data mounted on /data:
+
+           ops/s       rpc bklog
+           0.000           0.000
+
+read:              ops/s            kB/s           kB/op         retrans    avg RTT (ms)    avg exe (ms)  avg queue (ms)          errors
+                   0.000           0.000           0.000        0 (0.0%)           0.000           0.000           0.000        0 (0.0%)
+write:             ops/s            kB/s           kB/op         retrans    avg RTT (ms)    avg exe (ms)  avg queue (ms)          errors
+                   0.000           0.000           0.000        0 (0.0%)           0.000           0.000           0.000        0 (0.0%)
+
+10.191.22.190:/FastPlus_Cloud_DC/doc-root mounted on /doc-root:
+
+           ops/s       rpc bklog
+           0.000           0.000
+
+read:              ops/s            kB/s           kB/op         retrans    avg RTT (ms)    avg exe (ms)  avg queue (ms)          errors
+                   0.000           0.000           0.000        0 (0.0%)           0.000           0.000           0.000        0 (0.0%)
+write:             ops/s            kB/s           kB/op         retrans    avg RTT (ms)    avg exe (ms)  avg queue (ms)          errors
+                   0.000           0.000           0.000        0 (0.0%)           0.000           0.000           0.000        0 (0.0%)
+
+10.191.22.190:/FastPlus_Cloud_DC/systemlogs mounted on /systemlogs:
+
+           ops/s       rpc bklog
+           0.000           0.000
+
+read:              ops/s            kB/s           kB/op         retrans    avg RTT (ms)    avg exe (ms)  avg queue (ms)          errors
+                   0.000           0.000           0.000        0 (0.0%)           0.000           0.000           0.000        0 (0.0%)
+write:             ops/s            kB/s           kB/op         retrans    avg RTT (ms)    avg exe (ms)  avg queue (ms)          errors
+                   0.000           0.000           0.000        0 (0.0%)           0.000           0.000           0.000        0 (0.0%)
+
+10.191.22.190:/FastPlus_Cloud_DC/batchlogs mounted on /batchlogs:
+
+           ops/s       rpc bklog
+           0.000           0.000
+
+read:              ops/s            kB/s           kB/op         retrans    avg RTT (ms)    avg exe (ms)  avg queue (ms)          errors
+                   0.000           0.000           0.000        0 (0.0%)           0.000           0.000           0.000        0 (0.0%)
+write:             ops/s            kB/s           kB/op         retrans    avg RTT (ms)    avg exe (ms)  avg queue (ms)          errors
+                   0.000           0.000           0.000        0 (0.0%)           0.000           0.000           0.000        0 (0.0%)
+
+10.191.22.190:/FastPlus_Cloud_DC/batchlogs_backup mounted on /batchlogs_backup:
+
+           ops/s       rpc bklog
+           0.000           0.000
+
+read:              ops/s            kB/s           kB/op         retrans    avg RTT (ms)    avg exe (ms)  avg queue (ms)          errors
+                   0.000           0.000           0.000        0 (0.0%)           0.000           0.000           0.000        0 (0.0%)
+write:             ops/s            kB/s           kB/op         retrans    avg RTT (ms)    avg exe (ms)  avg queue (ms)          errors
+                   0.000           0.000           0.000        0 (0.0%)           0.000           0.000           0.000        0 (0.0%)
+
+10.191.22.190:/FastPlus_Cloud_DC/shared_lib mounted on /shared_lib:
+
+           ops/s       rpc bklog
+           0.000           0.000
+
+read:              ops/s            kB/s           kB/op         retrans    avg RTT (ms)    avg exe (ms)  avg queue (ms)          errors
+                   0.000           0.000           0.000        0 (0.0%)           0.000           0.000           0.000        0 (0.0%)
+write:             ops/s            kB/s           kB/op         retrans    avg RTT (ms)    avg exe (ms)  avg queue (ms)          errors
+                   0.000           0.000           0.000        0 (0.0%)           0.000           0.000           0.000        0 (0.0%)
+
+10.191.22.190:/FastPlus_Cloud_DC/logs_archive mounted on /logs_archive:
+
+           ops/s       rpc bklog
+           0.000           0.000
+
+read:              ops/s            kB/s           kB/op         retrans    avg RTT (ms)    avg exe (ms)  avg queue (ms)          errors
+                   0.000           0.000           0.000        0 (0.0%)           0.000           0.000           0.000        0 (0.0%)
+write:             ops/s            kB/s           kB/op         retrans    avg RTT (ms)    avg exe (ms)  avg queue (ms)          errors
+                   0.000           0.000           0.000        0 (0.0%)           0.000           0.000           0.000        0 (0.0%)
+
+10.191.22.190:/FastPlus_Cloud_DC/data mounted on /data:
+
+           ops/s       rpc bklog
+           2.800           0.000
+
+read:              ops/s            kB/s           kB/op         retrans    avg RTT (ms)    avg exe (ms)  avg queue (ms)          errors
+                   0.000           0.000           0.000        0 (0.0%)           0.000           0.000           0.000        0 (0.0%)
+write:             ops/s            kB/s           kB/op         retrans    avg RTT (ms)    avg exe (ms)  avg queue (ms)          errors
+                   0.000           0.000           0.000        0 (0.0%)           0.000           0.000           0.000        0 (0.0%)
+
+10.191.22.190:/FastPlus_Cloud_DC/doc-root mounted on /doc-root:
+
+           ops/s       rpc bklog
+           2.800           0.000
+
+read:              ops/s            kB/s           kB/op         retrans    avg RTT (ms)    avg exe (ms)  avg queue (ms)          errors
+                   0.000           0.000           0.000        0 (0.0%)           0.000           0.000           0.000        0 (0.0%)
+write:             ops/s            kB/s           kB/op         retrans    avg RTT (ms)    avg exe (ms)  avg queue (ms)          errors
+                   0.000           0.000           0.000        0 (0.0%)           0.000           0.000           0.000        0 (0.0%)
+
+10.191.22.190:/FastPlus_Cloud_DC/systemlogs mounted on /systemlogs:
+
+           ops/s       rpc bklog
+           2.800           0.000
+
+read:              ops/s            kB/s           kB/op         retrans    avg RTT (ms)    avg exe (ms)  avg queue (ms)          errors
+                   0.000           0.000           0.000        0 (0.0%)           0.000           0.000           0.000        0 (0.0%)
+write:             ops/s            kB/s           kB/op         retrans    avg RTT (ms)    avg exe (ms)  avg queue (ms)          errors
+                   0.000           0.000           0.000        0 (0.0%)           0.000           0.000           0.000        0 (0.0%)
+
+10.191.22.190:/FastPlus_Cloud_DC/batchlogs mounted on /batchlogs:
+
+           ops/s       rpc bklog
+           2.800           0.000
+
+read:              ops/s            kB/s           kB/op         retrans    avg RTT (ms)    avg exe (ms)  avg queue (ms)          errors
+                   0.000           0.000           0.000        0 (0.0%)           0.000           0.000           0.000        0 (0.0%)
+write:             ops/s            kB/s           kB/op         retrans    avg RTT (ms)    avg exe (ms)  avg queue (ms)          errors
+                   0.000           0.000           0.000        0 (0.0%)           0.000           0.000           0.000        0 (0.0%)
+
+10.191.22.190:/FastPlus_Cloud_DC/batchlogs_backup mounted on /batchlogs_backup:
+
+           ops/s       rpc bklog
+           2.800           0.000
+
+read:              ops/s            kB/s           kB/op         retrans    avg RTT (ms)    avg exe (ms)  avg queue (ms)          errors
+                   0.000           0.000           0.000        0 (0.0%)           0.000           0.000           0.000        0 (0.0%)
+write:             ops/s            kB/s           kB/op         retrans    avg RTT (ms)    avg exe (ms)  avg queue (ms)          errors
+                   0.000           0.000           0.000        0 (0.0%)           0.000           0.000           0.000        0 (0.0%)
+
+10.191.22.190:/FastPlus_Cloud_DC/shared_lib mounted on /shared_lib:
+
+           ops/s       rpc bklog
+           2.800           0.000
+
+read:              ops/s            kB/s           kB/op         retrans    avg RTT (ms)    avg exe (ms)  avg queue (ms)          errors
+                   0.000           0.000           0.000        0 (0.0%)           0.000           0.000           0.000        0 (0.0%)
+write:             ops/s            kB/s           kB/op         retrans    avg RTT (ms)    avg exe (ms)  avg queue (ms)          errors
+                   0.000           0.000           0.000        0 (0.0%)           0.000           0.000           0.000        0 (0.0%)
+
+10.191.22.190:/FastPlus_Cloud_DC/logs_archive mounted on /logs_archive:
+
+           ops/s       rpc bklog
+           2.800           0.000
+
+read:              ops/s            kB/s           kB/op         retrans    avg RTT (ms)    avg exe (ms)  avg queue (ms)          errors
+                   0.000           0.000           0.000        0 (0.0%)           0.000           0.000           0.000        0 (0.0%)
+write:             ops/s            kB/s           kB/op         retrans    avg RTT (ms)    avg exe (ms)  avg queue (ms)          errors
+                   0.000           0.000           0.000        0 (0.0%)           0.000           0.000           0.000        0 (0.0%)
+
+10.191.22.190:/FastPlus_Cloud_DC/data mounted on /data:
+
+           ops/s       rpc bklog
+           0.000           0.000
+
+read:              ops/s            kB/s           kB/op         retrans    avg RTT (ms)    avg exe (ms)  avg queue (ms)          errors
+                   0.000           0.000           0.000        0 (0.0%)           0.000           0.000           0.000        0 (0.0%)
+write:             ops/s            kB/s           kB/op         retrans    avg RTT (ms)    avg exe (ms)  avg queue (ms)          errors
+                   0.000           0.000           0.000        0 (0.0%)           0.000           0.000           0.000        0 (0.0%)
+
+10.191.22.190:/FastPlus_Cloud_DC/doc-root mounted on /doc-root:
+
+           ops/s       rpc bklog
+           0.000           0.000
+
+read:              ops/s            kB/s           kB/op         retrans    avg RTT (ms)    avg exe (ms)  avg queue (ms)          errors
+                   0.000           0.000           0.000        0 (0.0%)           0.000           0.000           0.000        0 (0.0%)
+write:             ops/s            kB/s           kB/op         retrans    avg RTT (ms)    avg exe (ms)  avg queue (ms)          errors
+                   0.000           0.000           0.000        0 (0.0%)           0.000           0.000           0.000        0 (0.0%)
+
+10.191.22.190:/FastPlus_Cloud_DC/systemlogs mounted on /systemlogs:
+
+           ops/s       rpc bklog
+           0.000           0.000
+
+read:              ops/s            kB/s           kB/op         retrans    avg RTT (ms)    avg exe (ms)  avg queue (ms)          errors
+                   0.000           0.000           0.000        0 (0.0%)           0.000           0.000           0.000        0 (0.0%)
+write:             ops/s            kB/s           kB/op         retrans    avg RTT (ms)    avg exe (ms)  avg queue (ms)          errors
+                   0.000           0.000           0.000        0 (0.0%)           0.000           0.000           0.000        0 (0.0%)
+
+10.191.22.190:/FastPlus_Cloud_DC/batchlogs mounted on /batchlogs:
+
+           ops/s       rpc bklog
+           0.000           0.000
+
+read:              ops/s            kB/s           kB/op         retrans    avg RTT (ms)    avg exe (ms)  avg queue (ms)          errors
+                   0.000           0.000           0.000        0 (0.0%)           0.000           0.000           0.000        0 (0.0%)
+write:             ops/s            kB/s           kB/op         retrans    avg RTT (ms)    avg exe (ms)  avg queue (ms)          errors
+                   0.000           0.000           0.000        0 (0.0%)           0.000           0.000           0.000        0 (0.0%)
+
+10.191.22.190:/FastPlus_Cloud_DC/batchlogs_backup mounted on /batchlogs_backup:
+
+           ops/s       rpc bklog
+           0.000           0.000
+
+read:              ops/s            kB/s           kB/op         retrans    avg RTT (ms)    avg exe (ms)  avg queue (ms)          errors
+                   0.000           0.000           0.000        0 (0.0%)           0.000           0.000           0.000        0 (0.0%)
+write:             ops/s            kB/s           kB/op         retrans    avg RTT (ms)    avg exe (ms)  avg queue (ms)          errors
+                   0.000           0.000           0.000        0 (0.0%)           0.000           0.000           0.000        0 (0.0%)
+
+10.191.22.190:/FastPlus_Cloud_DC/shared_lib mounted on /shared_lib:
+
+           ops/s       rpc bklog
+           0.000           0.000
+
+read:              ops/s            kB/s           kB/op         retrans    avg RTT (ms)    avg exe (ms)  avg queue (ms)          errors
+                   0.000           0.000           0.000        0 (0.0%)           0.000           0.000           0.000        0 (0.0%)
+write:             ops/s            kB/s           kB/op         retrans    avg RTT (ms)    avg exe (ms)  avg queue (ms)          errors
+                   0.000           0.000           0.000        0 (0.0%)           0.000           0.000           0.000        0 (0.0%)
+
+10.191.22.190:/FastPlus_Cloud_DC/logs_archive mounted on /logs_archive:
+
+           ops/s       rpc bklog
+           0.000           0.000
+
+read:              ops/s            kB/s           kB/op         retrans    avg RTT (ms)    avg exe (ms)  avg queue (ms)          errors
+                   0.000           0.000           0.000        0 (0.0%)           0.000           0.000           0.000        0 (0.0%)
+write:             ops/s            kB/s           kB/op         retrans    avg RTT (ms)    avg exe (ms)  avg queue (ms)          errors
+                   0.000           0.000           0.000        0 (0.0%)           0.000           0.000           0.000        0 (0.0%)
+
+10.191.22.190:/FastPlus_Cloud_DC/data mounted on /data:
+
+           ops/s       rpc bklog
+           2.800           0.000
+
+read:              ops/s            kB/s           kB/op         retrans    avg RTT (ms)    avg exe (ms)  avg queue (ms)          errors
+                   0.000           0.000           0.000        0 (0.0%)           0.000           0.000           0.000        0 (0.0%)
+write:             ops/s            kB/s           kB/op         retrans    avg RTT (ms)    avg exe (ms)  avg queue (ms)          errors
+                   0.000           0.000           0.000        0 (0.0%)           0.000           0.000           0.000        0 (0.0%)
+
+10.191.22.190:/FastPlus_Cloud_DC/doc-root mounted on /doc-root:
+
+           ops/s       rpc bklog
+           2.800           0.000
+
+read:              ops/s            kB/s           kB/op         retrans    avg RTT (ms)    avg exe (ms)  avg queue (ms)          errors
+                   0.000           0.000           0.000        0 (0.0%)           0.000           0.000           0.000        0 (0.0%)
+write:             ops/s            kB/s           kB/op         retrans    avg RTT (ms)    avg exe (ms)  avg queue (ms)          errors
+                   0.000           0.000           0.000        0 (0.0%)           0.000           0.000           0.000        0 (0.0%)
+
+10.191.22.190:/FastPlus_Cloud_DC/systemlogs mounted on /systemlogs:
+
+           ops/s       rpc bklog
+           2.800           0.000
+
+read:              ops/s            kB/s           kB/op         retrans    avg RTT (ms)    avg exe (ms)  avg queue (ms)          errors
+                   0.000           0.000           0.000        0 (0.0%)           0.000           0.000           0.000        0 (0.0%)
+write:             ops/s            kB/s           kB/op         retrans    avg RTT (ms)    avg exe (ms)  avg queue (ms)          errors
+                   0.000           0.000           0.000        0 (0.0%)           0.000           0.000           0.000        0 (0.0%)
+
+10.191.22.190:/FastPlus_Cloud_DC/batchlogs mounted on /batchlogs:
+
+           ops/s       rpc bklog
+           2.800           0.000
+
+read:              ops/s            kB/s           kB/op         retrans    avg RTT (ms)    avg exe (ms)  avg queue (ms)          errors
+                   0.000           0.000           0.000        0 (0.0%)           0.000           0.000           0.000        0 (0.0%)
+write:             ops/s            kB/s           kB/op         retrans    avg RTT (ms)    avg exe (ms)  avg queue (ms)          errors
+                   0.000           0.000           0.000        0 (0.0%)           0.000           0.000           0.000        0 (0.0%)
+
+10.191.22.190:/FastPlus_Cloud_DC/batchlogs_backup mounted on /batchlogs_backup:
+
+           ops/s       rpc bklog
+           2.800           0.000
+
+read:              ops/s            kB/s           kB/op         retrans    avg RTT (ms)    avg exe (ms)  avg queue (ms)          errors
+                   0.000           0.000           0.000        0 (0.0%)           0.000           0.000           0.000        0 (0.0%)
+write:             ops/s            kB/s           kB/op         retrans    avg RTT (ms)    avg exe (ms)  avg queue (ms)          errors
+                   0.000           0.000           0.000        0 (0.0%)           0.000           0.000           0.000        0 (0.0%)
+
+10.191.22.190:/FastPlus_Cloud_DC/shared_lib mounted on /shared_lib:
+
+           ops/s       rpc bklog
+           2.800           0.000
+
+read:              ops/s            kB/s           kB/op         retrans    avg RTT (ms)    avg exe (ms)  avg queue (ms)          errors
+                   0.000           0.000           0.000        0 (0.0%)           0.000           0.000           0.000        0 (0.0%)
+write:             ops/s            kB/s           kB/op         retrans    avg RTT (ms)    avg exe (ms)  avg queue (ms)          errors
+                   0.000           0.000           0.000        0 (0.0%)           0.000           0.000           0.000        0 (0.0%)
+
+10.191.22.190:/FastPlus_Cloud_DC/logs_archive mounted on /logs_archive:
+
+           ops/s       rpc bklog
+           2.800           0.000
+
+read:              ops/s            kB/s           kB/op         retrans    avg RTT (ms)    avg exe (ms)  avg queue (ms)          errors
+                   0.000           0.000           0.000        0 (0.0%)           0.000           0.000           0.000        0 (0.0%)
+write:             ops/s            kB/s           kB/op         retrans    avg RTT (ms)    avg exe (ms)  avg queue (ms)          errors
+                   0.000           0.000           0.000        0 (0.0%)           0.000           0.000           0.000        0 (0.0%)
+
+10.191.22.190:/FastPlus_Cloud_DC/data mounted on /data:
+
+           ops/s       rpc bklog
+           0.000           0.000
+
+read:              ops/s            kB/s           kB/op         retrans    avg RTT (ms)    avg exe (ms)  avg queue (ms)          errors
+                   0.000           0.000           0.000        0 (0.0%)           0.000           0.000           0.000        0 (0.0%)
+write:             ops/s            kB/s           kB/op         retrans    avg RTT (ms)    avg exe (ms)  avg queue (ms)          errors
+                   0.000           0.000           0.000        0 (0.0%)           0.000           0.000           0.000        0 (0.0%)
+
+10.191.22.190:/FastPlus_Cloud_DC/doc-root mounted on /doc-root:
+
+           ops/s       rpc bklog
+           0.000           0.000
+
+read:              ops/s            kB/s           kB/op         retrans    avg RTT (ms)    avg exe (ms)  avg queue (ms)          errors
+                   0.000           0.000           0.000        0 (0.0%)           0.000           0.000           0.000        0 (0.0%)
+write:             ops/s            kB/s           kB/op         retrans    avg RTT (ms)    avg exe (ms)  avg queue (ms)          errors
+                   0.000           0.000           0.000        0 (0.0%)           0.000           0.000           0.000        0 (0.0%)
+
+10.191.22.190:/FastPlus_Cloud_DC/systemlogs mounted on /systemlogs:
+
+           ops/s       rpc bklog
+           0.000           0.000
+
+read:              ops/s            kB/s           kB/op         retrans    avg RTT (ms)    avg exe (ms)  avg queue (ms)          errors
+                   0.000           0.000           0.000        0 (0.0%)           0.000           0.000           0.000        0 (0.0%)
+write:             ops/s            kB/s           kB/op         retrans    avg RTT (ms)    avg exe (ms)  avg queue (ms)          errors
+                   0.000           0.000           0.000        0 (0.0%)           0.000           0.000           0.000        0 (0.0%)
+
+10.191.22.190:/FastPlus_Cloud_DC/batchlogs mounted on /batchlogs:
+
+           ops/s       rpc bklog
+           0.000           0.000
+
+read:              ops/s            kB/s           kB/op         retrans    avg RTT (ms)    avg exe (ms)  avg queue (ms)          errors
+                   0.000           0.000           0.000        0 (0.0%)           0.000           0.000           0.000        0 (0.0%)
+write:             ops/s            kB/s           kB/op         retrans    avg RTT (ms)    avg exe (ms)  avg queue (ms)          errors
+                   0.000           0.000           0.000        0 (0.0%)           0.000           0.000           0.000        0 (0.0%)
+
+10.191.22.190:/FastPlus_Cloud_DC/batchlogs_backup mounted on /batchlogs_backup:
+
+           ops/s       rpc bklog
+           0.000           0.000
+
+read:              ops/s            kB/s           kB/op         retrans    avg RTT (ms)    avg exe (ms)  avg queue (ms)          errors
+                   0.000           0.000           0.000        0 (0.0%)           0.000           0.000           0.000        0 (0.0%)
+write:             ops/s            kB/s           kB/op         retrans    avg RTT (ms)    avg exe (ms)  avg queue (ms)          errors
+                   0.000           0.000           0.000        0 (0.0%)           0.000           0.000           0.000        0 (0.0%)
+
+10.191.22.190:/FastPlus_Cloud_DC/shared_lib mounted on /shared_lib:
+
+           ops/s       rpc bklog
+           0.000           0.000
+
+read:              ops/s            kB/s           kB/op         retrans    avg RTT (ms)    avg exe (ms)  avg queue (ms)          errors
+                   0.000           0.000           0.000        0 (0.0%)           0.000           0.000           0.000        0 (0.0%)
+write:             ops/s            kB/s           kB/op         retrans    avg RTT (ms)    avg exe (ms)  avg queue (ms)          errors
+                   0.000           0.000           0.000        0 (0.0%)           0.000           0.000           0.000        0 (0.0%)
+
+10.191.22.190:/FastPlus_Cloud_DC/logs_archive mounted on /logs_archive:
+
+           ops/s       rpc bklog
+           0.000           0.000
+
+read:              ops/s            kB/s           kB/op         retrans    avg RTT (ms)    avg exe (ms)  avg queue (ms)          errors
+                   0.000           0.000           0.000        0 (0.0%)           0.000           0.000           0.000        0 (0.0%)
+write:             ops/s            kB/s           kB/op         retrans    avg RTT (ms)    avg exe (ms)  avg queue (ms)          errors
+                   0.000           0.000           0.000        0 (0.0%)           0.000           0.000           0.000        0 (0.0%)
+
+10.191.22.190:/FastPlus_Cloud_DC/data mounted on /data:
+
+           ops/s       rpc bklog
+           2.800           0.000
+
+read:              ops/s            kB/s           kB/op         retrans    avg RTT (ms)    avg exe (ms)  avg queue (ms)          errors
+                   0.000           0.000           0.000        0 (0.0%)           0.000           0.000           0.000        0 (0.0%)
+write:             ops/s            kB/s           kB/op         retrans    avg RTT (ms)    avg exe (ms)  avg queue (ms)          errors
+                   0.000           0.000           0.000        0 (0.0%)           0.000           0.000           0.000        0 (0.0%)
+
+10.191.22.190:/FastPlus_Cloud_DC/doc-root mounted on /doc-root:
+
+           ops/s       rpc bklog
+           2.800           0.000
+
+read:              ops/s            kB/s           kB/op         retrans    avg RTT (ms)    avg exe (ms)  avg queue (ms)          errors
+                   0.000           0.000           0.000        0 (0.0%)           0.000           0.000           0.000        0 (0.0%)
+write:             ops/s            kB/s           kB/op         retrans    avg RTT (ms)    avg exe (ms)  avg queue (ms)          errors
+                   0.000           0.000           0.000        0 (0.0%)           0.000           0.000           0.000        0 (0.0%)
+
+10.191.22.190:/FastPlus_Cloud_DC/systemlogs mounted on /systemlogs:
+
+           ops/s       rpc bklog
+           2.800           0.000
+
+read:              ops/s            kB/s           kB/op         retrans    avg RTT (ms)    avg exe (ms)  avg queue (ms)          errors
+                   0.000           0.000           0.000        0 (0.0%)           0.000           0.000           0.000        0 (0.0%)
+write:             ops/s            kB/s           kB/op         retrans    avg RTT (ms)    avg exe (ms)  avg queue (ms)          errors
+                   0.000           0.000           0.000        0 (0.0%)           0.000           0.000           0.000        0 (0.0%)
+
+10.191.22.190:/FastPlus_Cloud_DC/batchlogs mounted on /batchlogs:
+
+           ops/s       rpc bklog
+           2.800           0.000
+
+read:              ops/s            kB/s           kB/op         retrans    avg RTT (ms)    avg exe (ms)  avg queue (ms)          errors
+                   0.000           0.000           0.000        0 (0.0%)           0.000           0.000           0.000        0 (0.0%)
+write:             ops/s            kB/s           kB/op         retrans    avg RTT (ms)    avg exe (ms)  avg queue (ms)          errors
+                   0.000           0.000           0.000        0 (0.0%)           0.000           0.000           0.000        0 (0.0%)
+
+10.191.22.190:/FastPlus_Cloud_DC/batchlogs_backup mounted on /batchlogs_backup:
+
+           ops/s       rpc bklog
+           2.800           0.000
+
+read:              ops/s            kB/s           kB/op         retrans    avg RTT (ms)    avg exe (ms)  avg queue (ms)          errors
+                   0.000           0.000           0.000        0 (0.0%)           0.000           0.000           0.000        0 (0.0%)
+write:             ops/s            kB/s           kB/op         retrans    avg RTT (ms)    avg exe (ms)  avg queue (ms)          errors
+                   0.000           0.000           0.000        0 (0.0%)           0.000           0.000           0.000        0 (0.0%)
+
+10.191.22.190:/FastPlus_Cloud_DC/shared_lib mounted on /shared_lib:
+
+           ops/s       rpc bklog
+           2.800           0.000
+
+read:              ops/s            kB/s           kB/op         retrans    avg RTT (ms)    avg exe (ms)  avg queue (ms)          errors
+                   0.000           0.000           0.000        0 (0.0%)           0.000           0.000           0.000        0 (0.0%)
+write:             ops/s            kB/s           kB/op         retrans    avg RTT (ms)    avg exe (ms)  avg queue (ms)          errors
+                   0.000           0.000           0.000        0 (0.0%)           0.000           0.000           0.000        0 (0.0%)
+
+10.191.22.190:/FastPlus_Cloud_DC/logs_archive mounted on /logs_archive:
+
+           ops/s       rpc bklog
+           2.800           0.000
+
+read:              ops/s            kB/s           kB/op         retrans    avg RTT (ms)    avg exe (ms)  avg queue (ms)          errors
+                   0.000           0.000           0.000        0 (0.0%)           0.000           0.000           0.000        0 (0.0%)
+write:             ops/s            kB/s           kB/op         retrans    avg RTT (ms)    avg exe (ms)  avg queue (ms)          errors
+                   0.000           0.000           0.000        0 (0.0%)           0.000           0.000           0.000        0 (0.0%)
