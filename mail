@@ -1,0 +1,27 @@
+Subject: Investigation Required – High I/O Latency Observed on /data NFS Mount
+Dear Team,
+Dynatrace is reporting “Slow Disk” for the /data filesystem on server cmpcprgovd210.
+As part of the initial OS-level investigation, we observed that /data is an NFS mount from:
+10.191.22.190:/FastPlus_Cloud_DC/data
+The NFS statistics captured during the investigation showed the following:
+Parameter
+Observed
+NFS Version
+4.2
+Read Avg RTT
+4.228 ms
+Write Avg RTT
+10.526 ms
+Write Avg Execution Time
+351.977 ms
+Write Avg Queue Time
+341.435 ms
+Retransmission
+0%
+Errors
+0
+The above indicates significant NFS write execution/queue latency, while no retransmission issue was observed in the captured sample.
+Request the NFS/Storage team to investigate the NFS server 10.191.22.190 and backend storage associated with /FastPlus_Cloud_DC/data, particularly for storage latency, I/O queue, IOPS, NFS server load, and any backend storage contention/events during the period when Dynatrace reported the slow-disk condition.
+Please also correlate the backend storage/NFS server metrics with the Dynatrace alert timeline (approximately 3 hours).
+Regards,
+[Name]
