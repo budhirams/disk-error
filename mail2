@@ -1,0 +1,7 @@
+For PID 25299 (StartSpringBatchScheduler smsmandates), the following was observed:
+Current umask: 000
+The umask 000 indicates that no permission bits are being masked by the process while creating new files. As a result, if the application creates a file with default mode 0666, it can be created with permissions:
+-rw-rw-rw- (0666)
+This is consistent with the world-writable smsmandates log files currently observed.
+It is also noted that the QSB user login shell has umask 0022; however, the running SMS Mandates Java process (PID 25299) has umask 000.
+Request you to please check the SMS Mandates application startup script/configuration and confirm why the process is running with umask 000, and whether it can be configured with an appropriate restrictive umask such as 0022.
