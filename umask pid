@@ -1,0 +1,52 @@
+root@cmpmtxn72:/opt/sbi/wac/lib/appjars# ls -l /opt/batchlogs/qsb/smsmandates/smsmandates-2026-08-30.log.Z
+ls -l /opt/batchlogs/qsb/smsmandates/smsmandates-2026-08-31.log.Z
+ls -l /opt/batchlogs/qsb/smsmandates/smsmandates-2026-09-03.log.Z
+ls -l /opt/batchlogs/qsb/smsmandates/smsmandates-2026-09-02.log.Z
+ls -l /opt/batchlogs/qsb/smsmandates/smsmandates.log
+ls -l /opt/batchlogs/qsb/smsmandates/smsmandates-2026-09-01.log.Z
+ls -l /opt/sbi/wac/lib/appjars/EISScheduler.jar
+-rw-rw-rw-   1 qsb      other     229143 Aug 30 23:59 /opt/batchlogs/qsb/smsmandates/smsmandates-2026-08-30.log.Z
+-rw-rw-rw-   1 qsb      other     242883 Aug 31 23:59 /opt/batchlogs/qsb/smsmandates/smsmandates-2026-08-31.log.Z
+-rw-rw-rw-   1 qsb      other     303850 Sep  3 23:55 /opt/batchlogs/qsb/smsmandates/smsmandates-2026-09-03.log.Z
+-rw-rw-rw-   1 qsb      other     235463 Sep  2 23:59 /opt/batchlogs/qsb/smsmandates/smsmandates-2026-09-02.log.Z
+-rw-rw-rw-   1 qsb      other    1430069 Sep  4 19:05 /opt/batchlogs/qsb/smsmandates/smsmandates.log
+-rw-rw-rw-   1 qsb      other     208007 Sep  1 23:54 /opt/batchlogs/qsb/smsmandates/smsmandates-2026-09-01.log.Z
+-rwxrwxrwx   1 waccmp   other    62836064 Aug 29 18:18 /opt/sbi/wac/lib/appjars/EISScheduler.jar
+root@cmpmtxn72:/opt/sbi/wac/lib/appjars# umask
+0022
+root@cmpmtxn72:/opt/sbi/wac/lib/appjars# su - qsb
+Authorized users only. All activity may be monitored and reported.
+mesg: cannot change mode
+mesg: cannot change mode
+Script started, file is /opt/sbi/qsb/cmpmtxn72/qsblogs.040926.190628.18:51
+qsb@cmpmtxn72:~$ umask
+0022
+qsb@cmpmtxn72:~$ pfiles 25299 | head -10
+25299:  java -Xms64m -Xmx3072m StartSpringBatchScheduler smsmandates
+  Current rlimit: 65535 file descriptors
+  Current umask: 000
+   0: S_IFCHR mode:0666 dev:16378,0 ino:80216072 uid:0 gid:3 rdev:153,2
+      O_RDONLY|O_LARGEFILE
+      /devices/pseudo/mm@0:null
+      offset:0
+   1: S_IFREG mode:0775 dev:316,65538 ino:103384426 uid:1030 gid:1 size:4489879752 (4.18G)
+      O_WRONLY|O_APPEND|O_CREAT|O_LARGEFILE
+      /opt/batchlogs/qsb/smsmandates/systemout.log
+qsb@cmpmtxn72:~$
+
+how to find this pid and its umask
+
+-rwxrwxrwx   1 waccmp   other    62836064 Aug 29 18:18 /opt/sbi/wac/lib/appjars/EISScheduler.jar
+
+and finaly I want to find out how to change umask  ,where to change
+qsb@cmpmtxn72:~$ pfiles 25299 | head -10
+25299:  java -Xms64m -Xmx3072m StartSpringBatchScheduler smsmandates
+  Current rlimit: 65535 file descriptors
+  Current umask: 000
+   0: S_IFCHR mode:0666 dev:16378,0 ino:80216072 uid:0 gid:3 rdev:153,2
+      O_RDONLY|O_LARGEFILE
+      /devices/pseudo/mm@0:null
+      offset:0
+   1: S_IFREG mode:0775 dev:316,65538 ino:103384426 uid:1030 gid:1 size:4489879752 (4.18G)
+      O_WRONLY|O_APPEND|O_CREAT|O_LARGEFILE
+      /opt/batchlogs/qsb/smsmandates/systemout.log
