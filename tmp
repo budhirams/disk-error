@@ -1,2 +1,12 @@
 
 tmpfs  /tmp  tmpfs  defaults,nodev,nosuid,noexec  0  0
+
+
+Subject
+Request to Revert /tmp Changes After Activity Completion
+Dear Team,
+If any changes are made to the /tmp mount configuration during the activity, please ensure that the modified configuration is reverted to the original settings in /etc/fstab after completion of the activity.
+Also, please execute the below two commands to apply the reverted configuration:
+[Command 1]
+[Command 2]
+Kindly confirm once the changes have been reverted and the activity is completed.
