@@ -1,1 +1,6 @@
 find / \( -fstype nfs -o -fstype cachefs -o -fstype autofs -o -fstype cifs -o -fstype ntfs -o -fstype objfs -o -fstype proc \) -prune -o -type f -perm -0002 -print
+
+
+/opt/sbi/wac/integration/cmp_corp_onboarding_intg.jar
+/opt/sbi/wac/lib/appjars/EISScheduler.jar
+/opt/sbi/wac/conf/corp_reversefile/reversefile.properties
