@@ -5,3 +5,31 @@ find / \( -fstype nfs -o -fstype cachefs -o -fstype autofs -o -fstype cifs -o -f
 /opt/sbi/wac/lib/appjars/EISScheduler.jar
 /opt/sbi/wac/conf/corp_reversefile/reversefile.properties
 /opt/batchlogs/qsb/smsmandates
+
+
+
+#!/bin/sh
+
+LOG="/var/log/world_writable_fix.log"
+
+for DIR in \
+/opt/sbi/wac/integration \
+/opt/sbi/wac/lib/appjars \
+/opt/sbi/wac/conf/corp_reversefile \
+/opt/batchlogs/qsb/smsmandates
+do
+
+    LATEST=$(find "$DIR" -type f -exec ls -dt {} + 2>/dev/null | head -1)
+
+    if [ -n "$LATEST" ]; then
+        PERM=$(ls -l "$LATEST" | awk '{print $1}')
+
+        case "$PERM" in
+            -rw-rw-rw-|-rwxrwxrwx)
+                chmod 644 "$LATEST"
+                echo "$(date): Changed $LATEST permission from $PERM to 644" >> "$LOG"
+                ;;
+        esac
+    fi
+
+done
