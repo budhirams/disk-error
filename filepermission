@@ -1,0 +1,27 @@
+#!/bin/sh
+
+LOG="/var/log/world_writable_fix.log"
+
+for DIR in \
+/opt/sbi/wac/integration \
+/opt/sbi/wac/lib/appjars \
+/opt/sbi/wac/conf/corp_reversefile \
+/opt/batchlogs/qsb/smsmandates
+do
+
+    TODAY=$(date '+%Y-%m-%d')
+
+    find "$DIR" -type f -mtime 0 -exec ls -dt {} + 2>/dev/null |
+    while read FILE
+    do
+        PERM=$(ls -l "$FILE" | awk '{print $1}')
+
+        case "$PERM" in
+            -rw-rw-rw-|-rwxrwxrwx)
+                chmod 644 "$FILE"
+                echo "$(date): Changed $FILE from $PERM to 644" >> "$LOG"
+                ;;
+        esac
+    done
+
+done
