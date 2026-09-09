@@ -25,3 +25,8 @@ do
     done
 
 done
+
+
+
+
+find /your/path -type f -newermt "$(date '+%Y-%m-%d') 00:00:00" ! -newermt "$(date -d 'tomorrow' '+%Y-%m-%d') 00:00:00" -ls
