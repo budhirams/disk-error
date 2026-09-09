@@ -30,3 +30,12 @@ done
 
 
 find /your/path -type f -newermt "$(date '+%Y-%m-%d') 00:00:00" ! -newermt "$(date -d 'tomorrow' '+%Y-%m-%d') 00:00:00" -ls
+
+
+root@cmpmtxn72:~# find /opt/batchlogs/qsb/smsmandates/ -type f -newermt "$(date '+%Y-%m-%d') 00:00:00" ! -newermt "$(date -d 'tomorrow' '+%Y-%m-%d') 00:00:00" -ls
+date: illegal option -- d
+usage:  date [-u] mmddHHMM[[cc]yy][.SS]
+        date [-u] [+format]
+        date -a [-]sss[.fff]
+find: bad option -newermt
+find: [-H | -L] path-list predicate-list
