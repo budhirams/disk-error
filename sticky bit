@@ -1,0 +1,7 @@
+Dear Team,
+During the security compliance check, we identified the below directory as world-writable without the sticky bit:
+Directory: <path/to/directory>
+As part of the remediation, we have verified the existing permissions and will set the sticky bit on the identified directory.
+The sticky bit will be added using chmod +t, which will retain the existing read/write/execute permissions and only add the sticky-bit attribute.
+Post-change, the directory permissions will be validated to ensure the sticky bit is successfully configured and there is no impact to the existing access permissions or application functionality.
+Request you to please review and confirm if there are any application-specific concerns before/after the change.
