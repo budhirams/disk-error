@@ -1,0 +1,10 @@
+qsb@cmpmtxn72:/opt/scripts$ ps -ef | grep -i qsb | grep smsmandates
+     qsb 25299     1   0   Aug 04 ?         806:36 java -Xms64m -Xmx3072m StartSpringBatchScheduler smsmandates
+     qsb 28836    40   0 15:44:14 pts/91      0:00 grep smsmandates
+qsb@cmpmtxn72:/opt/scripts$ pargs 25299
+25299:  java -Xms64m -Xmx3072m StartSpringBatchScheduler smsmandates
+argv[0]: java
+argv[1]: -Xms64m
+argv[2]: -Xmx3072m
+argv[3]: StartSpringBatchScheduler
+argv[4]: smsmandates
