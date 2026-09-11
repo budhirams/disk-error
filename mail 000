@@ -1,0 +1,5 @@
+Dear Team,
+After analysis and investigation, we identified that the concerned cron job is scheduled under the Kaling team and has umask 000 configured.
+Due to umask 000, the application is creating world-writable files/directories with permissions such as 666 and 777.
+As per the standard configuration, the default umask 022 is already set and umask 000 is not required for this application.
+@Kaling Team, please check the scheduled cron job and remove/update the umask 000 configuration as appropriate. Also, please provide your comments/confirmation on the same.
