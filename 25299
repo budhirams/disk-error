@@ -144,3 +144,36 @@ qsb@cmpmtxn72:/opt/scripts$ pfiles 25299 | grep "jar"
       /usr/jdk/instances/jdk1.8.0/jre/lib/ext/sunpkcs11.jar
       /usr/jdk/instances/jdk1.8.0/jre/lib/ext/cldrdata.jar
       /usr/jdk/instances/jdk1.8.0/jre/lib/ext/localedata.jar
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+qsb@cmpmtxn72:~$ ps -ef | grep 25299
+     qsb 25299     1   0   Aug 04 ?         808:05 java -Xms64m -Xmx3072m StartSpringBatchScheduler smsmandates
+     qsb  2536 23680   0 16:11:27 pts/94      0:00 grep 25299
+qsb@cmpmtxn72:~$ ps -ef | grep StartSpringScheduler
+     qsb 14663 23680   0 16:13:20 pts/94      0:00 grep StartSpringScheduler
+qsb@cmpmtxn72:~$ ps -ef | grep 'StartSpringBatchScheduler'
+     qsb 16443 23680   0 16:13:39 pts/94      0:00 grep StartSpringBatchScheduler
+     qsb 25299     1   0   Aug 04 ?         808:05 java -Xms64m -Xmx3072m StartSpringBatchScheduler smsmandates
+     qsb   697     1   0   Sep 10 ?         104:12 java -Xms1024m -Xmx4096m StartSpringBatchScheduler offusprocessor
+     qsb 24349     1   0   Aug 20 ?        3627:17 java -Xms64m -Xmx3072m StartSpringBatchScheduler fileprocessor
+     qsb  8402     1   0 16:00:12 ?           4:03 java -Xms64m -Xmx3072m StartSpringBatchScheduler collectionprocessor
+
