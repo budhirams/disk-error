@@ -1,7 +1,5 @@
-For PID 25299 (StartSpringBatchScheduler smsmandates), the following was observed:
-Current umask: 000
-The umask 000 indicates that no permission bits are being masked by the process while creating new files. As a result, if the application creates a file with default mode 0666, it can be created with permissions:
--rw-rw-rw- (0666)
-This is consistent with the world-writable smsmandates log files currently observed.
-It is also noted that the QSB user login shell has umask 0022; however, the running SMS Mandates Java process (PID 25299) has umask 000.
-Request you to please check the SMS Mandates application startup script/configuration and confirm why the process is running with umask 000, and whether it can be configured with an appropriate restrictive umask such as 0022.
+Dear Sir,
+Please find attached the sheet containing the servers that are pending for onboarding in SCGuard. These are newly created environment servers for UAT.
+As informed earlier, these servers have already been onboarded in Oardee. However, I am currently unable to find or scan these servers in SCGuard.
+If the servers are visible from your end, kindly share the scan list for at least one server so that we can proceed with the required evidence collection.
+Your support is requested to close the pending SCGuard onboarding activity.
