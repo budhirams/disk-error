@@ -1,0 +1,10 @@
+Subject
+Request for SCGUARD DB User Creation and Required Privileges
+Dear Team,
+As per the attached updated notes, the DB user is required to be created with the username scguard in lowercase.
+Previously, the user was created as SCGUARD in uppercase. Kindly delete the existing SCGUARD user and recreate the user as scguard in lowercase.
+Additionally, please provide/share the following:
+PIMS Vault integration sheet for the newly created scguard user.
+Required privileges as mentioned in the attached form.
+Please provide the required SELECT privileges to the scguard user on all the required tables and views, as specified in the form.
+Kindly complete the above activities and share the required details/evidence once done.
